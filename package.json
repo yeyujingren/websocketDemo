@@ -1,0 +1,7 @@
+{
+  "name": "WebSocketDemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yifeng.tao <yifeng.tao@luckincoffee.com>",
+  "license": "MIT"
+}
