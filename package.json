@@ -3,5 +3,33 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "yifeng.tao <yifeng.tao@luckincoffee.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dll": "webpack --config build/webpack.dll.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "happypack": "^5.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "css-loader": "^3.4.1",
+    "file-loader": "^5.0.2",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.2"
+  }
 }
