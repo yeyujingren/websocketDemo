@@ -7,10 +7,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.export = {
+const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
+
+module.exports = {
   // 配置入门
   entry: {
-    main: path.resolve(__dirname, '../src/index.jsx'),
+    main: path.resolve(__dirname, '../src/index.js'),
   },
 
   // 配置打包后文件路径
@@ -156,7 +158,7 @@ module.export = {
     }),
     new Webpack.DllReferencePlugin({
       context: __dirname,
-      manifest: require('./vendor-manifest.json')
+      manifest: require('../vendor-manifest.json')
     }),
     new CopyWebpackPlugin([  // copy生成的静态文件到app/public目录下面
       {from: 'static', to: path.resolve(__dirname, '../app/public')}

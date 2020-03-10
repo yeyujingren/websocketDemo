@@ -7,7 +7,7 @@ module.exports = WebpackMerge(WebpackConfig, {
   devtool: 'cheap-module-source-map',
   devServer: {
     port: 3000,
-    hot: true,
+    // hot: true,
     contentBase: path.resolve(__dirname, '../app/public'),
     compress: true,  // 
     proxy: {
@@ -15,6 +15,6 @@ module.exports = WebpackMerge(WebpackConfig, {
     }
   },
   plugins: [
-    new Webpack.HotModuleReplacementPlugin()
+    // new Webpack.HotModuleReplacementPlugin()
   ]
 })

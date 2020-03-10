@@ -1,15 +1,15 @@
 {
   "name": "WebSocketDemo",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "yifeng.tao <yifeng.tao@luckincoffee.com>",
   "license": "MIT",
   "scripts": {
-    "dll": "webpack --config build/webpack.dll.config.js"
+    "dll": "webpack --config build/webpack.dll.config.js",
+    "dev:client": "webpack-dev-server --config ./build/webpack.dev.js --progress --fix --title=ws-$npm_package_name"
   },
   "keywords": [
     "react",
-    "pc",
+    "mobile",
     "web Socket",
     "PWA"
   ],
@@ -17,6 +17,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
@@ -31,13 +32,15 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "antd-mobile": "^2.3.1",
     "css-loader": "^3.4.1",
     "egg": "^2.26.0",
     "file-loader": "^5.0.2",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "style-loader": "^1.1.2"
   }
 }
