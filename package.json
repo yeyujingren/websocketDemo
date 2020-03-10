@@ -7,6 +7,11 @@
     "dll": "webpack --config build/webpack.dll.config.js",
     "dev:client": "webpack-dev-server --config ./build/webpack.dev.js --progress --fix --title=ws-$npm_package_name"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "keywords": [
     "react",
     "mobile",
@@ -18,13 +23,25 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "autoprefixer": "^9.7.4",
+    "babel-eslint": "^11.0.0-beta.2",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "egg-bin": "^4.14.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "happypack": "^5.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",

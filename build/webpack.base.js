@@ -12,7 +12,7 @@ const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 module.exports = {
   // 配置入门
   entry: {
-    main: path.resolve(__dirname, '../src/index.js'),
+    main: path.resolve(__dirname, '../src/index.jsx'),
   },
 
   // 配置打包后文件路径
@@ -28,6 +28,12 @@ module.exports = {
   module: {
     rules: [
       // js || jsx
+      {
+        test: /\.jsx?$/,
+        loader: "eslint-loader",
+        enforce: "pre",
+        exclude: /node_modules/
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
