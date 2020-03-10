@@ -6,13 +6,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const ForkTsCheckerNotifierWebpackPlugin = require('fork-ts-checker-notifier-webpack-plugin');
 
 const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
 module.exports = {
   // 配置入门
   entry: {
-    main: path.resolve(__dirname, '../src/index.jsx'),
+    main: path.resolve(__dirname, '../src/index.tsx'),
   },
 
   // 配置打包后文件路径
@@ -29,20 +31,20 @@ module.exports = {
     rules: [
       // js || jsx
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         loader: "eslint-loader",
         enforce: "pre",
         exclude: [/node_modules/, /app/]
       },
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
         // 将js文件处理交给id为happyBabel的HappyPack的实例执行
         use: [{
           loader: "happypack/loader?id=happyBabel",
         }],
         resolve: {
-          extensions: [".js", ".jsx"]
+          extensions: [".ts", ".tsx", ".js", ".jsx"]
         }
       },
 
@@ -137,6 +139,18 @@ module.exports = {
   },
 
   plugins: [
+    new ForkTsCheckerWebpackPlugin({
+      // 将async设为false，可以阻止Webpack的emit以等待类型检查器/linter，并向Webpack的编译添加错误。
+      async: false
+    }),
+    // 将TypeScript类型检查错误以弹框提示
+    // 如果fork-ts-checker-webpack-plugin的async为false时可以不用
+    // 否则建议使用，以方便发现错误
+    new ForkTsCheckerNotifierWebpackPlugin({
+      title: 'TypeScript',
+      excludeWarnings: true,
+      skipSuccessful: true
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../public/index.html')

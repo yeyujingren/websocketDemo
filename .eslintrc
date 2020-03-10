@@ -1,7 +1,7 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "parser": "babel-eslint",
-  "plugins": ["react-hooks"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-hooks", "@typescript-eslint"],
   "rules": {
     "prefer-object-spread": "off",
     "consistent-return": "off",
@@ -28,6 +28,8 @@
     "react/jsx-props-no-spreading": "off",
     "no-plusplus": "off",
     "no-underscore-dangle": "off",
+    // 扩展文件后缀eslint
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "indent": [
       "warn",
       2,

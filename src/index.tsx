@@ -8,10 +8,13 @@ import ReactDom from 'react-dom';
 // import 'antd-mobile/dist/antd-mobile.css';
 // import './style/index.less';
 
-const App = () => (
-  <div>
-    Hello My Firends
-  </div>
-);
+import {Hello} from './Component/Hello';
 
-ReactDom.render(<App />, global.document.querySelector('#root'));
+const App = () => (
+  <Hello 
+    compiler= "TypeScript"
+    framework="React"
+  />
+)
+
+ReactDom.render(<App />, window.document.querySelector('#root'));
