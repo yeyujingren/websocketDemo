@@ -1,0 +1,210 @@
+2020-03-10 13:40:52,998 INFO 18352 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:40:53,024 INFO 18352 [egg-multipart] stream mode enable
+2020-03-10 13:40:53,115 INFO 18352 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:40:53,119 INFO 18352 [egg-security] use csrf middleware
+2020-03-10 13:40:53,120 INFO 18352 [egg-security] use methodnoallow middleware
+2020-03-10 13:40:53,121 INFO 18352 [egg-security] use noopen middleware
+2020-03-10 13:40:53,122 INFO 18352 [egg-security] use nosniff middleware
+2020-03-10 13:40:53,123 INFO 18352 [egg-security] use xssProtection middleware
+2020-03-10 13:40:53,124 INFO 18352 [egg-security] use xframe middleware
+2020-03-10 13:40:53,124 INFO 18352 [egg-security] use dta middleware
+2020-03-10 13:40:53,124 INFO 18352 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:40:53,131 INFO 18352 [egg:core] dump config after load, 5ms
+2020-03-10 13:40:53,144 INFO 18352 [egg-watcher:application] watcher start success
+2020-03-10 13:40:53,149 INFO 18352 [egg:core] dump config after ready, 3ms
+2020-03-10 13:42:53,713 INFO 2920 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:42:53,735 INFO 2920 [egg-multipart] stream mode enable
+2020-03-10 13:42:53,780 INFO 2920 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:42:53,783 INFO 2920 [egg-security] use csrf middleware
+2020-03-10 13:42:53,783 INFO 2920 [egg-security] use methodnoallow middleware
+2020-03-10 13:42:53,784 INFO 2920 [egg-security] use noopen middleware
+2020-03-10 13:42:53,784 INFO 2920 [egg-security] use nosniff middleware
+2020-03-10 13:42:53,785 INFO 2920 [egg-security] use xssProtection middleware
+2020-03-10 13:42:53,785 INFO 2920 [egg-security] use xframe middleware
+2020-03-10 13:42:53,785 INFO 2920 [egg-security] use dta middleware
+2020-03-10 13:42:53,785 INFO 2920 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:42:53,791 INFO 2920 [egg:core] dump config after load, 5ms
+2020-03-10 13:42:53,799 INFO 2920 [egg-watcher:application] watcher start success
+2020-03-10 13:42:53,804 INFO 2920 [egg:core] dump config after ready, 3ms
+2020-03-10 13:44:05,254 INFO 18332 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:44:05,277 INFO 18332 [egg-multipart] stream mode enable
+2020-03-10 13:44:05,321 INFO 18332 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:44:05,323 INFO 18332 [egg-security] use csrf middleware
+2020-03-10 13:44:05,323 INFO 18332 [egg-security] use methodnoallow middleware
+2020-03-10 13:44:05,324 INFO 18332 [egg-security] use noopen middleware
+2020-03-10 13:44:05,324 INFO 18332 [egg-security] use nosniff middleware
+2020-03-10 13:44:05,325 INFO 18332 [egg-security] use xssProtection middleware
+2020-03-10 13:44:05,325 INFO 18332 [egg-security] use xframe middleware
+2020-03-10 13:44:05,325 INFO 18332 [egg-security] use dta middleware
+2020-03-10 13:44:05,325 INFO 18332 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:44:05,330 INFO 18332 [egg:core] dump config after load, 4ms
+2020-03-10 13:44:05,339 INFO 18332 [egg-watcher:application] watcher start success
+2020-03-10 13:44:05,344 INFO 18332 [egg:core] dump config after ready, 3ms
+2020-03-10 13:44:07,973 INFO 19212 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:44:07,997 INFO 19212 [egg-multipart] stream mode enable
+2020-03-10 13:44:08,042 INFO 19212 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:44:08,044 INFO 19212 [egg-security] use csrf middleware
+2020-03-10 13:44:08,045 INFO 19212 [egg-security] use methodnoallow middleware
+2020-03-10 13:44:08,045 INFO 19212 [egg-security] use noopen middleware
+2020-03-10 13:44:08,046 INFO 19212 [egg-security] use nosniff middleware
+2020-03-10 13:44:08,046 INFO 19212 [egg-security] use xssProtection middleware
+2020-03-10 13:44:08,046 INFO 19212 [egg-security] use xframe middleware
+2020-03-10 13:44:08,047 INFO 19212 [egg-security] use dta middleware
+2020-03-10 13:44:08,047 INFO 19212 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:44:08,051 INFO 19212 [egg:core] dump config after load, 3ms
+2020-03-10 13:44:08,060 INFO 19212 [egg-watcher:application] watcher start success
+2020-03-10 13:44:08,065 INFO 19212 [egg:core] dump config after ready, 4ms
+2020-03-10 13:45:36,727 INFO 2852 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:45:36,751 INFO 2852 [egg-multipart] stream mode enable
+2020-03-10 13:45:36,795 INFO 2852 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:45:36,797 INFO 2852 [egg-security] use csrf middleware
+2020-03-10 13:45:36,798 INFO 2852 [egg-security] use methodnoallow middleware
+2020-03-10 13:45:36,798 INFO 2852 [egg-security] use noopen middleware
+2020-03-10 13:45:36,799 INFO 2852 [egg-security] use nosniff middleware
+2020-03-10 13:45:36,799 INFO 2852 [egg-security] use xssProtection middleware
+2020-03-10 13:45:36,799 INFO 2852 [egg-security] use xframe middleware
+2020-03-10 13:45:36,800 INFO 2852 [egg-security] use dta middleware
+2020-03-10 13:45:36,800 INFO 2852 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:45:36,804 INFO 2852 [egg:core] dump config after load, 3ms
+2020-03-10 13:45:36,814 INFO 2852 [egg-watcher:application] watcher start success
+2020-03-10 13:45:36,819 INFO 2852 [egg:core] dump config after ready, 4ms
+2020-03-10 13:48:45,077 INFO 16576 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:48:45,101 INFO 16576 [egg-multipart] stream mode enable
+2020-03-10 13:48:45,150 INFO 16576 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:48:45,152 INFO 16576 [egg-security] use csrf middleware
+2020-03-10 13:48:45,153 INFO 16576 [egg-security] use methodnoallow middleware
+2020-03-10 13:48:45,153 INFO 16576 [egg-security] use noopen middleware
+2020-03-10 13:48:45,154 INFO 16576 [egg-security] use nosniff middleware
+2020-03-10 13:48:45,154 INFO 16576 [egg-security] use xssProtection middleware
+2020-03-10 13:48:45,154 INFO 16576 [egg-security] use xframe middleware
+2020-03-10 13:48:45,155 INFO 16576 [egg-security] use dta middleware
+2020-03-10 13:48:45,155 INFO 16576 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:48:45,159 INFO 16576 [egg:core] dump config after load, 3ms
+2020-03-10 13:48:45,169 INFO 16576 [egg-watcher:application] watcher start success
+2020-03-10 13:48:45,175 INFO 16576 [egg:core] dump config after ready, 4ms
+2020-03-10 13:50:33,494 INFO 12136 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:50:33,521 INFO 12136 [egg-multipart] stream mode enable
+2020-03-10 13:50:33,567 INFO 12136 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:50:33,570 INFO 12136 [egg-security] use csrf middleware
+2020-03-10 13:50:33,570 INFO 12136 [egg-security] use methodnoallow middleware
+2020-03-10 13:50:33,571 INFO 12136 [egg-security] use noopen middleware
+2020-03-10 13:50:33,571 INFO 12136 [egg-security] use nosniff middleware
+2020-03-10 13:50:33,571 INFO 12136 [egg-security] use xssProtection middleware
+2020-03-10 13:50:33,572 INFO 12136 [egg-security] use xframe middleware
+2020-03-10 13:50:33,572 INFO 12136 [egg-security] use dta middleware
+2020-03-10 13:50:33,572 INFO 12136 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:50:33,576 INFO 12136 [egg:core] dump config after load, 3ms
+2020-03-10 13:50:33,586 INFO 12136 [egg-watcher:application] watcher start success
+2020-03-10 13:50:33,591 INFO 12136 [egg:core] dump config after ready, 3ms
+2020-03-10 13:51:33,538 INFO 2936 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 13:51:33,565 INFO 2936 [egg-multipart] stream mode enable
+2020-03-10 13:51:33,610 INFO 2936 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 13:51:33,613 INFO 2936 [egg-security] use csrf middleware
+2020-03-10 13:51:33,614 INFO 2936 [egg-security] use methodnoallow middleware
+2020-03-10 13:51:33,614 INFO 2936 [egg-security] use noopen middleware
+2020-03-10 13:51:33,614 INFO 2936 [egg-security] use nosniff middleware
+2020-03-10 13:51:33,615 INFO 2936 [egg-security] use xssProtection middleware
+2020-03-10 13:51:33,615 INFO 2936 [egg-security] use xframe middleware
+2020-03-10 13:51:33,615 INFO 2936 [egg-security] use dta middleware
+2020-03-10 13:51:33,615 INFO 2936 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 13:51:33,620 INFO 2936 [egg:core] dump config after load, 3ms
+2020-03-10 13:51:33,631 INFO 2936 [egg-watcher:application] watcher start success
+2020-03-10 13:51:33,635 INFO 2936 [egg:core] dump config after ready, 3ms
+2020-03-10 14:02:58,325 INFO 6996 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:02:58,348 INFO 6996 [egg-multipart] stream mode enable
+2020-03-10 14:02:58,390 INFO 6996 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:02:58,392 INFO 6996 [egg-security] use csrf middleware
+2020-03-10 14:02:58,393 INFO 6996 [egg-security] use methodnoallow middleware
+2020-03-10 14:02:58,393 INFO 6996 [egg-security] use noopen middleware
+2020-03-10 14:02:58,394 INFO 6996 [egg-security] use nosniff middleware
+2020-03-10 14:02:58,394 INFO 6996 [egg-security] use xssProtection middleware
+2020-03-10 14:02:58,394 INFO 6996 [egg-security] use xframe middleware
+2020-03-10 14:02:58,395 INFO 6996 [egg-security] use dta middleware
+2020-03-10 14:02:58,395 INFO 6996 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:02:58,402 INFO 6996 [egg:core] dump config after load, 4ms
+2020-03-10 14:02:58,415 INFO 6996 [egg-watcher:application] watcher start success
+2020-03-10 14:02:58,420 INFO 6996 [egg:core] dump config after ready, 3ms
+2020-03-10 14:06:37,544 INFO 16636 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:06:37,571 INFO 16636 [egg-multipart] stream mode enable
+2020-03-10 14:06:37,626 INFO 16636 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:06:37,628 INFO 16636 [egg-security] use csrf middleware
+2020-03-10 14:06:37,629 INFO 16636 [egg-security] use methodnoallow middleware
+2020-03-10 14:06:37,630 INFO 16636 [egg-security] use noopen middleware
+2020-03-10 14:06:37,630 INFO 16636 [egg-security] use nosniff middleware
+2020-03-10 14:06:37,631 INFO 16636 [egg-security] use xssProtection middleware
+2020-03-10 14:06:37,631 INFO 16636 [egg-security] use xframe middleware
+2020-03-10 14:06:37,632 INFO 16636 [egg-security] use dta middleware
+2020-03-10 14:06:37,632 INFO 16636 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:06:37,643 INFO 16636 [egg:core] dump config after load, 6ms
+2020-03-10 14:06:37,652 INFO 16636 [egg-watcher:application] watcher start success
+2020-03-10 14:06:37,658 INFO 16636 [egg:core] dump config after ready, 4ms
+2020-03-10 14:06:43,211 INFO 15516 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:06:43,234 INFO 15516 [egg-multipart] stream mode enable
+2020-03-10 14:06:43,280 INFO 15516 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:06:43,283 INFO 15516 [egg-security] use csrf middleware
+2020-03-10 14:06:43,284 INFO 15516 [egg-security] use methodnoallow middleware
+2020-03-10 14:06:43,284 INFO 15516 [egg-security] use noopen middleware
+2020-03-10 14:06:43,285 INFO 15516 [egg-security] use nosniff middleware
+2020-03-10 14:06:43,285 INFO 15516 [egg-security] use xssProtection middleware
+2020-03-10 14:06:43,286 INFO 15516 [egg-security] use xframe middleware
+2020-03-10 14:06:43,286 INFO 15516 [egg-security] use dta middleware
+2020-03-10 14:06:43,286 INFO 15516 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:06:43,294 INFO 15516 [egg:core] dump config after load, 4ms
+2020-03-10 14:06:43,303 INFO 15516 [egg-watcher:application] watcher start success
+2020-03-10 14:06:43,307 INFO 15516 [egg:core] dump config after ready, 3ms
+2020-03-10 14:07:21,714 INFO 18784 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:07:21,744 INFO 18784 [egg-multipart] stream mode enable
+2020-03-10 14:07:21,792 INFO 18784 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:07:21,794 INFO 18784 [egg-security] use csrf middleware
+2020-03-10 14:07:21,795 INFO 18784 [egg-security] use methodnoallow middleware
+2020-03-10 14:07:21,795 INFO 18784 [egg-security] use noopen middleware
+2020-03-10 14:07:21,796 INFO 18784 [egg-security] use nosniff middleware
+2020-03-10 14:07:21,796 INFO 18784 [egg-security] use xssProtection middleware
+2020-03-10 14:07:21,797 INFO 18784 [egg-security] use xframe middleware
+2020-03-10 14:07:21,797 INFO 18784 [egg-security] use dta middleware
+2020-03-10 14:07:21,797 INFO 18784 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:07:21,806 INFO 18784 [egg:core] dump config after load, 4ms
+2020-03-10 14:07:21,815 INFO 18784 [egg-watcher:application] watcher start success
+2020-03-10 14:07:21,821 INFO 18784 [egg:core] dump config after ready, 4ms
+2020-03-10 14:07:26,260 INFO 6252 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:07:26,284 INFO 6252 [egg-multipart] stream mode enable
+2020-03-10 14:07:26,328 INFO 6252 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:07:26,330 INFO 6252 [egg-security] use csrf middleware
+2020-03-10 14:07:26,331 INFO 6252 [egg-security] use methodnoallow middleware
+2020-03-10 14:07:26,331 INFO 6252 [egg-security] use noopen middleware
+2020-03-10 14:07:26,332 INFO 6252 [egg-security] use nosniff middleware
+2020-03-10 14:07:26,332 INFO 6252 [egg-security] use xssProtection middleware
+2020-03-10 14:07:26,332 INFO 6252 [egg-security] use xframe middleware
+2020-03-10 14:07:26,333 INFO 6252 [egg-security] use dta middleware
+2020-03-10 14:07:26,333 INFO 6252 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:07:26,340 INFO 6252 [egg:core] dump config after load, 4ms
+2020-03-10 14:07:26,349 INFO 6252 [egg-watcher:application] watcher start success
+2020-03-10 14:07:26,353 INFO 6252 [egg:core] dump config after ready, 3ms
+2020-03-10 14:07:28,470 INFO 16824 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:07:28,498 INFO 16824 [egg-multipart] stream mode enable
+2020-03-10 14:07:28,554 INFO 16824 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:07:28,556 INFO 16824 [egg-security] use csrf middleware
+2020-03-10 14:07:28,557 INFO 16824 [egg-security] use methodnoallow middleware
+2020-03-10 14:07:28,557 INFO 16824 [egg-security] use noopen middleware
+2020-03-10 14:07:28,558 INFO 16824 [egg-security] use nosniff middleware
+2020-03-10 14:07:28,558 INFO 16824 [egg-security] use xssProtection middleware
+2020-03-10 14:07:28,559 INFO 16824 [egg-security] use xframe middleware
+2020-03-10 14:07:28,559 INFO 16824 [egg-security] use dta middleware
+2020-03-10 14:07:28,559 INFO 16824 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:07:28,570 INFO 16824 [egg:core] dump config after load, 5ms
+2020-03-10 14:07:28,582 INFO 16824 [egg-watcher:application] watcher start success
+2020-03-10 14:07:28,588 INFO 16824 [egg:core] dump config after ready, 4ms
+2020-03-10 14:09:50,376 INFO 18444 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-10 14:09:50,405 INFO 18444 [egg-multipart] stream mode enable
+2020-03-10 14:09:50,458 INFO 18444 [egg-static] starting static serve /public/ -> E:\WebSocketDemo\app\public
+2020-03-10 14:09:50,462 INFO 18444 [egg-security] use csrf middleware
+2020-03-10 14:09:50,463 INFO 18444 [egg-security] use methodnoallow middleware
+2020-03-10 14:09:50,464 INFO 18444 [egg-security] use noopen middleware
+2020-03-10 14:09:50,464 INFO 18444 [egg-security] use nosniff middleware
+2020-03-10 14:09:50,465 INFO 18444 [egg-security] use xssProtection middleware
+2020-03-10 14:09:50,465 INFO 18444 [egg-security] use xframe middleware
+2020-03-10 14:09:50,466 INFO 18444 [egg-security] use dta middleware
+2020-03-10 14:09:50,466 INFO 18444 [egg-security] compose 7 middlewares into one security middleware
+2020-03-10 14:09:50,474 INFO 18444 [egg:core] dump config after load, 5ms
+2020-03-10 14:09:50,485 INFO 18444 [egg-watcher:application] watcher start success
+2020-03-10 14:09:50,489 INFO 18444 [egg:core] dump config after ready, 3ms

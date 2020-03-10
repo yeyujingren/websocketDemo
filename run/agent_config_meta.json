@@ -1,0 +1,308 @@
+{
+  "middleware": "E:\\WebSocketDemo\\config\\config.default.js",
+  "defaultAppName": "E:\\WebSocketDemo\\config\\config.default.js",
+  "session": {
+    "maxAge": "E:\\WebSocketDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\WebSocketDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\WebSocketDemo\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\WebSocketDemo\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "E:\\WebSocketDemo\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "E:\\WebSocketDemo\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\WebSocketDemo\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\WebSocketDemo\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "E:\\WebSocketDemo\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\WebSocketDemo\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "E:\\WebSocketDemo\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\WebSocketDemo\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "E:\\WebSocketDemo\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "E:\\WebSocketDemo\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\WebSocketDemo\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "E:\\WebSocketDemo\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\WebSocketDemo\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "E:\\WebSocketDemo\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "E:\\WebSocketDemo\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "E:\\WebSocketDemo\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "E:\\WebSocketDemo\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "E:\\WebSocketDemo\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\WebSocketDemo\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\WebSocketDemo\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\WebSocketDemo\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\WebSocketDemo\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "E:\\WebSocketDemo\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "E:\\WebSocketDemo\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "E:\\WebSocketDemo\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "E:\\WebSocketDemo\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "E:\\WebSocketDemo\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "env": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "keys": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "author": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "license": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "lint": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "dll": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "dev:client": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "dev:server": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+      }
+    },
+    "keywords": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "devDependencies": {
+      "@babel/core": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "@babel/preset-env": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "@babel/preset-react": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "autoprefixer": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "babel-eslint": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "babel-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "clean-webpack-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "copy-webpack-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-airbnb": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-prettier": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-import": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-jsx-a11y": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-react": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-react-hooks": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "happypack": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "html-webpack-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "husky": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "lint-staged": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "optimize-css-assets-webpack-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "prettier": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "uglifyjs-webpack-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "webpack": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "webpack-cli": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "webpack-dev-server": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "webpack-merge": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "antd-mobile": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "css-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "egg": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "file-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "less-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "mini-css-extract-plugin": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "postcss-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "react": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "react-dom": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "style-loader": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "E:\\WebSocketDemo\\node_modules\\egg\\config\\config.default.js"
+}

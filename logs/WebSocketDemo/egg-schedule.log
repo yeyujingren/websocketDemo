@@ -1,0 +1,51 @@
+2020-03-10 13:40:53,156 INFO 16492 [Timer] E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 53346847ms at 2020-03-11 04:30:00.003
+2020-03-10 13:40:53,157 INFO 16492 [Timer] E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 37146844ms at 2020-03-11 00:00:00.001
+2020-03-10 13:40:53,157 INFO 16492 [Timer] E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 37147843ms at 2020-03-11 00:00:01.000
+2020-03-10 13:40:53,023 INFO 18352 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:40:53,023 INFO 18352 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:40:53,023 INFO 18352 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:42:53,735 INFO 2920 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:42:53,735 INFO 2920 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:42:53,735 INFO 2920 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:44:05,276 INFO 18332 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:44:05,276 INFO 18332 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:44:05,276 INFO 18332 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:44:07,996 INFO 19212 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:44:07,996 INFO 19212 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:44:07,996 INFO 19212 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:45:36,750 INFO 2852 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:45:36,750 INFO 2852 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:45:36,750 INFO 2852 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:48:45,101 INFO 16576 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:48:45,101 INFO 16576 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:48:45,101 INFO 16576 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:50:33,521 INFO 12136 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:50:33,521 INFO 12136 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:50:33,521 INFO 12136 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 13:51:33,564 INFO 2936 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 13:51:33,564 INFO 2936 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 13:51:33,564 INFO 2936 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:02:58,426 INFO 18108 [Timer] E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 52021577ms at 2020-03-11 04:30:00.003
+2020-03-10 14:02:58,427 INFO 18108 [Timer] E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 35821574ms at 2020-03-11 00:00:00.001
+2020-03-10 14:02:58,427 INFO 18108 [Timer] E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 35822573ms at 2020-03-11 00:00:01.000
+2020-03-10 14:02:58,347 INFO 6996 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:02:58,347 INFO 6996 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:02:58,347 INFO 6996 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:06:37,570 INFO 16636 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:06:37,570 INFO 16636 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:06:37,570 INFO 16636 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:06:43,233 INFO 15516 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:06:43,233 INFO 15516 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:06:43,233 INFO 15516 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:07:21,743 INFO 18784 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:07:21,743 INFO 18784 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:07:21,743 INFO 18784 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:07:26,284 INFO 6252 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:07:26,284 INFO 6252 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:07:26,284 INFO 6252 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:07:28,497 INFO 16824 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:07:28,497 INFO 16824 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:07:28,497 INFO 16824 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-03-10 14:09:50,404 INFO 18444 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-03-10 14:09:50,404 INFO 18444 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-03-10 14:09:50,404 INFO 18444 [egg-schedule]: register schedule E:\WebSocketDemo\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

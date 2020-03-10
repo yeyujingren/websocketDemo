@@ -10,7 +10,7 @@ import ReactDom from 'react-dom';
 
 const App = () => (
   <div>
-    this is a test
+    Hello My Firends
   </div>
 );
 
