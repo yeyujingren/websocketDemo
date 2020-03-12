@@ -1,12 +1,14 @@
-const Webpack = require('webpack');
+// const Webpack = require('webpack');
 const path = require('path');
 const WebpackConfig = require('./webpack.base');
 const WebpackMerge = require('webpack-merge');
+
 module.exports = WebpackMerge(WebpackConfig, {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
     port: 3000,
+    host: '0.0.0.0',
     // hot: true,
     contentBase: path.resolve(__dirname, '../app/public'),
     compress: true,  // 

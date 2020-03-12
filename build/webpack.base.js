@@ -50,7 +50,7 @@ module.exports = {
 
       // Less
       {
-        test: /\.less$/,
+        test: /\.css|\.less$/,
         use: [
           'style-loader',
           {
@@ -68,7 +68,14 @@ module.exports = {
               plugins: [require('autoprefixer')]
             }
           },
-          'less-loader'
+          {
+            loader: 'less-loader',
+            options: {
+              sourceMap: true,
+              strictMath: true,
+              noIeCompat: true
+            }
+          }
         ]
       },
 

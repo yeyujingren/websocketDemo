@@ -4,7 +4,7 @@
   "author": "yifeng.tao <yifeng.tao@luckincoffee.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx, ./src",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "dll": "webpack --config build/webpack.dll.config.js",
     "dev:client": "webpack-dev-server --config ./build/webpack.dev.js --progress --fix --title=ws-$npm_package_name",
     "dev:server": "egg-bin dev --port 8080 --title=egg-server-$npm_package_name",
@@ -65,15 +65,20 @@
     "@babel/preset-typescript": "^7.8.3",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
     "antd-mobile": "^2.3.1",
     "css-loader": "^3.4.1",
     "egg": "^2.26.0",
     "file-loader": "^5.0.2",
+    "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "style-loader": "^1.1.2"
   }
 }
