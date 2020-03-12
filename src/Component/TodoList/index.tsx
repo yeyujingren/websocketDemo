@@ -1,6 +1,9 @@
 import React, {FC, useState} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
 import {Button, InputItem, List, Picker, WhiteSpace} from 'antd-mobile';
 import useForm  from 'rc-form-hooks';
+import {RootState} from '../../store';
+import { addItemAction } from './store/action';
 import './style.less'
 
 interface ListProps {
@@ -27,9 +30,11 @@ const levelList = [
 const TodoList: FC = () => {
   // useState 不需要做类型注释，因为ts会根据初始值对器类型进行判断
   const initValue: Array<ListProps> = [];
-  const [list, setList] = useState(initValue);
+  // const [list, setList] = useState(initValue);
   const [imLevel, setImLevel] = useState(1);
   const [isDisabled, setDisabled] = useState(true)
+  const dispatch = useDispatch();
+  const list = useSelector((state:RootState) => state.todo);
 
   const {getFieldDecorator, validateFields, resetFields} = useForm<{
     message: string;
@@ -61,7 +66,8 @@ const TodoList: FC = () => {
     e.preventDefault();
     validateFields()
       .then(v => {
-        setList([...list, {message:v.message, level: imLevel, cless: clessHandler()}]);
+        // setList([...list, {message:v.message, level: imLevel, cless: clessHandler()}]);
+        dispatch(addItemAction({message:v.message, level: imLevel, cless: clessHandler()}))
         resetFields();
         setDisabled(true);
       })
@@ -107,10 +113,10 @@ const TodoList: FC = () => {
       >添加到List</Button>
       <WhiteSpace size="xl" />
       {
-        list.length
+        list.lists.length
           ? <div className="listWapper">
             {
-              list.map((item, index) => {
+              list.lists.map((item, index) => {
                 const key = `${item}${index}`
                 return (
                   <span className={item.cless} key={key}>
