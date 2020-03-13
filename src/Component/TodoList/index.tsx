@@ -3,14 +3,15 @@ import {useDispatch, useSelector} from 'react-redux';
 import {Button, InputItem, List, Picker, WhiteSpace} from 'antd-mobile';
 import useForm  from 'rc-form-hooks';
 import {RootState} from '../../store';
-import { addItemAction } from './store/action';
+import { addItemAction, subItemAction } from './store/action';
+import { TodoItem } from './store/actionType';
 import './style.less'
 
-interface ListProps {
-  level: number;
-  message: string,
-  cless: string
-}
+// interface ListProps {
+//   level: number;
+//   message: string,
+//   cless: string
+// }
 
 const levelList = [
   {
@@ -29,7 +30,7 @@ const levelList = [
 
 const TodoList: FC = () => {
   // useState 不需要做类型注释，因为ts会根据初始值对器类型进行判断
-  const initValue: Array<ListProps> = [];
+  // const initValue: Array<ListProps> = [];
   // const [list, setList] = useState(initValue);
   const [imLevel, setImLevel] = useState(1);
   const [isDisabled, setDisabled] = useState(true)
@@ -42,6 +43,10 @@ const TodoList: FC = () => {
 
   const selectHandler = (value: Array<number>) => {
     setImLevel(value[0]);
+  }
+
+  const delItemHandler = (value: TodoItem) => {
+    dispatch(subItemAction(value))
   }
 
   const clessHandler = () => {
@@ -119,7 +124,7 @@ const TodoList: FC = () => {
               list.lists.map((item, index) => {
                 const key = `${item}${index}`
                 return (
-                  <span className={item.cless} key={key}>
+                  <span onClick={() => delItemHandler(item)} className={item.cless} key={key}>
                     {item.message}
                   </span>
                 )
