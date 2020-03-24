@@ -4,5 +4,7 @@ test/
 
 # 静态资源目录
 static
-# 姿态资源对应manifest
+# 静态资源对应manifest
 vendor-manifest.json
+
+run/
