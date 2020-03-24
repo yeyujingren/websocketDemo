@@ -1,0 +1,10 @@
+2020-03-24 16:16:20,718 INFO 16392 [egg:logger] init all loggers with options: {"dir":"E:\\WebSocketDemo\\logs\\WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-03-24 16:16:20,732 INFO 16392 [egg:core] dump config after load, 7ms
+2020-03-24 16:16:20,776 INFO 16392 [egg-watcher] Start watching: ["E:\\WebSocketDemo\\app","E:\\WebSocketDemo\\config","E:\\WebSocketDemo\\mocks","E:\\WebSocketDemo\\mocks_proxy","E:\\WebSocketDemo\\app.js"]
+2020-03-24 16:16:20,776 INFO 16392 [egg-watcher] Start watching: "E:\\WebSocketDemo\\app"
+2020-03-24 16:16:20,776 INFO 16392 [egg-watcher] Start watching: "E:\\WebSocketDemo\\config"
+2020-03-24 16:16:20,777 INFO 16392 [egg-watcher] Start watching: "E:\\WebSocketDemo\\mocks"
+2020-03-24 16:16:20,777 INFO 16392 [egg-watcher] Start watching: "E:\\WebSocketDemo\\mocks_proxy"
+2020-03-24 16:16:20,777 INFO 16392 [egg-watcher] Start watching: "E:\\WebSocketDemo\\app.js"
+2020-03-24 16:16:20,777 INFO 16392 [egg-watcher:agent] watcher start success
+2020-03-24 16:16:20,782 INFO 16392 [egg:core] dump config after ready, 3ms
