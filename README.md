@@ -16,5 +16,5 @@
 - 结束已启动的项目： `npm run stop` or `yarn stop`
 
 ### TS (快速入门demo)
-- 在分支`[test_typescript_demo](https://github.com/yeyujingren/websocketDemo/tree/test_typescript_demo)`下有简单的一个ts入门demo：Todo List
+- 在分支[test_typescript_demo](https://github.com/yeyujingren/websocketDemo/tree/test_typescript_demo)下有简单的一个ts入门demo：Todo List
 - 使用技术栈：react hook、redux、typeScript
