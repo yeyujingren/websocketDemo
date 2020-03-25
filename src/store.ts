@@ -1,21 +1,23 @@
-import { createStore, applyMiddleware, combineReducers, compose, Action } from 'redux';
+import {applyMiddleware, combineReducers, createStore, Action, compose} from 'redux';
 import thunk, {ThunkAction} from 'redux-thunk';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  
+});
 
-const configureStore = (initialState = {}) => {
-  const composeFn = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  const enhancers = composeFn(applyMiddleware(thunk));
-  return createStore(rootReducer, initialState, enhancers);
-}
+export type RootState = ReturnType<typeof rootReducer>;
 
-const store = configureStore();
-
-export type RootReducer = ReturnType<typeof rootReducer>
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
-  RootReducer,
+  RootState,
   unknown,
   Action<string>
 >
-export default store;
+
+function configureStore() {
+  const composeFn = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const enhancers = composeFn(applyMiddleware(thunk));
+  return createStore(rootReducer, enhancers);
+}
+
+export default configureStore();

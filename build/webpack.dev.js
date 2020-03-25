@@ -7,7 +7,7 @@ module.exports = WebpackMerge(WebpackConfig, {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
-    port: 3000,
+    port: 9520,
     host: '0.0.0.0',
     // hot: true,
     contentBase: path.resolve(__dirname, '../app/public'),
