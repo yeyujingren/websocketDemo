@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
-import "@/libs/before-load";
+import "./libs/befor-load";
 import store from './store';
 
 import 'antd-mobile/dist/antd-mobile.css';
