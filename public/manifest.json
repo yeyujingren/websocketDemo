@@ -1,0 +1,13 @@
+{
+  "name": "PWA Websocket Demo",
+  "short_name": "Websocket Demo",
+  "start_url": "/",
+  "theme_color": "#4374A5",
+  "background_color": "#4374A5",
+  "display": "standalone",
+  "orientation": "natural",
+  "icons": [{
+    "src": "./favicon.ico",
+    "size": "128x128"
+  }]
+}

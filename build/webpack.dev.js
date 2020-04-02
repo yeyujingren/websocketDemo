@@ -14,7 +14,9 @@ module.exports = WebpackMerge(WebpackConfig, {
     compress: true,  // 
     proxy: {
       '/api': 'http://127.0.0.1:8080',
-    }
+    },
+    // fix: ngrok tips: Invalid Host header
+    disableHostCheck: true
   },
   plugins: [
     // new Webpack.HotModuleReplacementPlugin()

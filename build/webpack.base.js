@@ -8,6 +8,9 @@ const Webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ForkTsCheckerNotifierWebpackPlugin = require('fork-ts-checker-notifier-webpack-plugin');
+// PWA
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 const happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
@@ -189,6 +192,29 @@ module.exports = {
     }),
     new CopyWebpackPlugin([  // copy生成的静态文件到app/public目录下面
       {from: 'static', to: path.resolve(__dirname, '../app/public')}
-    ])
+    ]),
+    new WebpackPwaManifest({
+      name:'PWA Websocket Demo',
+      short_name: 'Websocket Demo',
+      description: "a websocket demo ",
+      background_color: "#4374A5",
+      theme_color: '#4374A5',
+      filename: 'manifest.[hash:8].json',
+      publicPath: '/',
+      icons: [{
+        src: path.resolve(__dirname, '../public/android_chrome.png'),
+        size: "192x192",
+        type: "image/png"
+      }, {
+        src: path.resolve(__dirname, '../public/launcher-icon.png'),
+        sizes: "192x192",
+        type: "image/png"
+      }]
+    }),
+    new WorkboxPlugin.GenerateSW({
+      // help to start up serviceWorkers faster
+      clientsClaim: true,
+      skipWaiting: true,
+    })
   ]
 }
