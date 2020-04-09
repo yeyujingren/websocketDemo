@@ -22,42 +22,48 @@ const Regester: FC = () => {
   }
 
   return (
-    <div className="registerWapper">
-      <div className="login">
-        <div className="logo"></div>
-        <List>
-          {
-            getFieldDecorator('usename', {
-              rules: [{
-                required: true,
-                message: 'enter your userName:)'
-              }]
-            })(
-              <InputItem
-                type="text"
-                placeholder="enter your userName"
-                clear
-              >用户名：</InputItem>
-            )
-          }
-          {
-            getFieldDecorator('userpwd', {
-              rules: [{
-                required: true,
-                message: 'enter your userPassword:)'
-              }]
-            })(
-              <InputItem
-                type="password"
-                placeholder="enter your userPassword"
-                clear
-              >密码：</InputItem>
-            )
-          }
-        </List>
+    <>
+      <div className="modal">
+        <div className="top"></div>
+        <div className="bottom"></div>
       </div>
-      <Button onClick={submitHandler} type="primary">登陆</Button>
-    </div>
+      <div className="registerWapper">
+        <div className="logo"></div>
+        <div className="login">
+          <List>
+            {
+              getFieldDecorator('usename', {
+                rules: [{
+                  required: true,
+                  message: 'enter your userName:)'
+                }]
+              })(
+                <InputItem
+                  type="text"
+                  placeholder="enter your userName"
+                  clear
+                >用户名：</InputItem>
+              )
+            }
+            {
+              getFieldDecorator('userpwd', {
+                rules: [{
+                  required: true,
+                  message: 'enter your userPassword:)'
+                }]
+              })(
+                <InputItem
+                  type="password"
+                  placeholder="enter your userPassword"
+                  clear
+                >密码：</InputItem>
+              )
+            }
+          </List>
+        </div>
+        <Button onClick={submitHandler} type="primary">登陆</Button>
+      </div>
+    </>
   )
 }
 
