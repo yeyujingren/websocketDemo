@@ -2175,6 +2175,11 @@ async-limiter@~1.0.0:
   resolved "http://verdaccio.10101111.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha1-3TeelPDbgxCwgpH51kwyCXZmF/0=
 
+async-validator@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-2.0.1.tgz?cache=0&sync_timestamp=1583827300130&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-2.0.1.tgz#2ab03b1062b5bc727de9229aeeba4dc43f36de24"
+  integrity sha1-KrA7EGK1vHJ96SKa7rpNxD823iQ=
+
 async@1.5.0:
   version "1.5.0"
   resolved "http://verdaccio.10101111.com/async/-/async-1.5.0.tgz#2796642723573859565633fc6274444bee2f8ce3"
@@ -8259,6 +8264,15 @@ loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/loader-utils/download/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha1-5MrOW4FtQloWa18JfhDNErNgZLA=
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "http://verdaccio.10101111.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -8590,7 +8604,7 @@ mime-db@1.43.0, "mime-db@>= 1.43.0 < 2":
   resolved "http://verdaccio.10101111.com/mime-db/-/mime-db-1.43.0.tgz#0a12e0502650e473d735535050e7c8f4eb4fae58"
   integrity sha1-ChLgUCZQ5HPXNVNQUOfI9OtPrlg=
 
-mime-types@^2.1.12, mime-types@^2.1.18, mime-types@^2.1.8, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
+mime-types@^2.1.12, mime-types@^2.1.18, mime-types@^2.1.26, mime-types@^2.1.8, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.26"
   resolved "http://verdaccio.10101111.com/mime-types/-/mime-types-2.1.26.tgz#9c921fc09b7e149a65dfdc0da4d20997200b0a06"
   integrity sha1-nJIfwJt+FJpl39wNpNIJlyALCgY=
@@ -10525,6 +10539,14 @@ rc-collapse@~1.9.1:
     css-animation "1.x"
     prop-types "^15.5.6"
     rc-animate "2.x"
+
+rc-form-hooks@^0.0.1-beta.18:
+  version "0.0.1-beta.18"
+  resolved "https://registry.npm.taobao.org/rc-form-hooks/download/rc-form-hooks-0.0.1-beta.18.tgz#0228305276fdfe1af437f844efdfd9f917135373"
+  integrity sha1-AigwUnb9/hr0N/hE79/Z+RcTU3M=
+  dependencies:
+    async-validator "^2.0.1"
+    lodash "^4.17.15"
 
 rc-gesture@~0.0.18, rc-gesture@~0.0.22:
   version "0.0.22"
@@ -12728,6 +12750,15 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "http://verdaccio.10101111.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-loader@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/url-loader/download/url-loader-4.1.0.tgz#c7d6b0d6b0fccd51ab3ffc58a78d32b8d89a7be2"
+  integrity sha1-x9aw1rD8zVGrP/xYp40yuNiae+I=
+  dependencies:
+    loader-utils "^2.0.0"
+    mime-types "^2.1.26"
+    schema-utils "^2.6.5"
 
 url-parse@^1.4.3:
   version "1.4.7"

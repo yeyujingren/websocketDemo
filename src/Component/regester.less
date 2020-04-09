@@ -1,0 +1,30 @@
+@fontColor: '#ccc';
+@keyframes login {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.registerWapper {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 20px 0;
+  box-sizing: border-box;
+  animation: login 1.5s ease-in-out;
+  .login {
+    padding-bottom: 30px;
+    border-radius:5px ;
+    overflow: hidden;
+    .logo {
+      margin: 0 auto 30px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50% 50%;
+      overflow: hidden;
+      background-image: url("./images/logo.png");
+      background-size: 100% 100%;
+    }
+    .am-list {
+      font-size: 12px;
+      color: @fontColor;
+    }
+  }
+}

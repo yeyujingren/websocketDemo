@@ -93,7 +93,7 @@ module.exports = {
               fallback: {
                 loader: 'file-loader',
                 options: {
-                  name: 'img/[name].[chunkhash:8].[ext]'
+                  name: 'image/[name].[contenthash:8].[ext]'
                 }
               }
             }
@@ -112,7 +112,7 @@ module.exports = {
               fallback: {
                 loader: 'file-loader',
                 options: {
-                  name: 'media/[name].[chunkhash:8].[ext]'
+                  name: 'media/[name].[contenthash:8].[ext]'
                 }
               }
             }
@@ -131,7 +131,7 @@ module.exports = {
               fallback: {
                 loader: 'file-loader',
                 options: {
-                  name: 'fonts/[name].[chunkhash:8].[ext]'
+                  name: 'fonts/[name].[contenthash:8].[ext]'
                 }
               }
             }

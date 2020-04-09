@@ -12,7 +12,7 @@ const ROUTER_CONFIG: RouterPropsInter[] = [
   {
     path: '/login',
     component: lazy(() => (
-      import(/* webpackChunkName: '/login' */ './Component/Hello')
+      import(/* webpackChunkName: '/login' */ './Component/Regestr')
     )),
     exact: true
   }
