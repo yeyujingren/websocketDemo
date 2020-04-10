@@ -1,11 +1,15 @@
 @fontColor: '#ccc';
-@keyframes login {
+@keyframes Login {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-@keyframes entryAnimation{
+@keyframes EntryAnimation{
   0% {height: 50vh;}
-  100% {height: 0; display: none;}
+  100% {height: 0;}
+}
+@keyframes roilGear {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
 }
 .modal {
   width: 0px;
@@ -17,13 +21,30 @@
   justify-content: space-between;
   .top, .bottom {
     width: 100vw;
-    animation: entryAnimation 3s ease-in-out forwards;
-  }
-  .top {
-    background-color: red;
+    height: 50vh;
+    animation: EntryAnimation 3s ease-in forwards;
+    animation-delay: .5s;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    .gear {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      margin-left: -50px;
+      background-image: url('./images/gear.jpeg');
+      background-size: 100% 100%;
+      animation: roilGear 3s ease-in;
+      animation-delay: .5s;
+    }
   }
   .bottom {
-    background-color: green;
+    .gear {
+      top: -50px;
+    }
   }
 }
 .registerWapper {
@@ -32,8 +53,8 @@
   padding: 100px 20px 0;
   box-sizing: border-box;
   opacity: 0;
-  animation: login 1s ease-in-out forwards;
-  animation-delay: 3s;
+  animation: Login 1s ease-in-out forwards;
+  animation-delay: 3.5s;
   .logo {
     margin: 0 auto 30px;
     width: 88px;

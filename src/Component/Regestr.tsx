@@ -24,8 +24,12 @@ const Regester: FC = () => {
   return (
     <>
       <div className="modal">
-        <div className="top"></div>
-        <div className="bottom"></div>
+        <div className="top">
+          <div className="gear"></div>
+        </div>
+        <div className="bottom">
+          <div className="gear"></div>
+        </div>
       </div>
       <div className="registerWapper">
         <div className="logo"></div>
