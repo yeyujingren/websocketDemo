@@ -1,5 +1,6 @@
 import React, { FC, FormEvent } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
+import history from '../utils/history';
 import useForm from 'rc-form-hooks';
 
 import './regester.less';
@@ -21,6 +22,10 @@ const Regester: FC = () => {
       })
   }
 
+  const goLogon = () => {
+    history.push('/logon');
+  }
+  console.log('aaaa');
   return (
     <>
       <div className="modal">
@@ -39,12 +44,12 @@ const Regester: FC = () => {
               getFieldDecorator('usename', {
                 rules: [{
                   required: true,
-                  message: 'enter your userName:)'
+                  message: '用户名不能为空～'
                 }]
               })(
                 <InputItem
                   type="text"
-                  placeholder="enter your userName"
+                  placeholder="请输入用户名..."
                   clear
                 >用户名：</InputItem>
               )
@@ -53,17 +58,22 @@ const Regester: FC = () => {
               getFieldDecorator('userpwd', {
                 rules: [{
                   required: true,
-                  message: 'enter your userPassword:)'
+                  message: '密码不能为空～'
                 }]
               })(
                 <InputItem
                   type="password"
-                  placeholder="enter your userPassword"
+                  placeholder="请输入密码..."
                   clear
                 >密码：</InputItem>
               )
             }
           </List>
+        </div>
+        <div className="logon">
+          <span onClick={goLogon}>
+            去注册?
+          </span>
         </div>
         <Button onClick={submitHandler} type="primary">登陆</Button>
       </div>

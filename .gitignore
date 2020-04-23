@@ -6,3 +6,6 @@ test/
 static
 # 姿态资源对应manifest
 vendor-manifest.json
+
+# app下的public目录
+app/public/

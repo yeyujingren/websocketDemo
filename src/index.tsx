@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import "./libs/befor-load";
+import SW from './sw';
 import store from './store';
 
 import 'antd-mobile/dist/antd-mobile.css';
 
-import Hello from './Component/Regestr';
+import getRoutes from './router';
 
+SW();
 const App = () => (
   <Provider store={store}>
-    <Hello />
+    {getRoutes()}
   </Provider>
 )
 

@@ -1,7 +1,7 @@
 import {createBrowserHistory} from 'history';
 
 class MyHistory {
-  history: any;
+  [x: string]: any;
 
   constructor(history:any) {
     this.history = history;
@@ -18,16 +18,12 @@ class MyHistory {
   goBack(num: number = -1) {
     this.history.go(num);
   }
-
-  setReactRouterHistory(history: any) {
-    this.history = history;
-  }
 }
 
 export const history = createBrowserHistory({
   basename: '/'
 });
 
-const myHistory:MyHistory = new MyHistory(window.history);
-myHistory.setReactRouterHistory(history);
+
+const myHistory:MyHistory = new MyHistory(history);
 export default myHistory;
