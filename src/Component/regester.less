@@ -52,9 +52,11 @@
   height: 100vh;
   padding: 100px 20px 0;
   box-sizing: border-box;
-  opacity: 0;
-  animation: Login 1s ease-in-out forwards;
-  animation-delay: 3.5s;
+  &.firstCome {
+    opacity: 0;
+    animation: Login 1s ease-in-out forwards;
+    animation-delay: 3.5s;
+  }
   .logo {
     margin: 0 auto 30px;
     width: 88px;

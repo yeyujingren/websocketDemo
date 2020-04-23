@@ -1,4 +1,4 @@
-import React, { FC, FormEvent } from 'react';
+import React, { FC, FormEvent, useEffect, useState } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
 import history from '../utils/history';
 import useForm from 'rc-form-hooks';
@@ -6,6 +6,15 @@ import useForm from 'rc-form-hooks';
 import './regester.less';
 
 const Regester: FC = () => {
+  const [flag, setFlag] = useState(false);
+  useEffect(() => {
+    if(window.localStorage.getItem('isFirst') !== 'false') {
+      window.localStorage.setItem('isFirst', 'false')
+    } else {
+      setFlag(true);
+    }
+  })
+
   const { getFieldDecorator, validateFields } = useForm<{
     usename: string;
     userpwd: string;
@@ -25,18 +34,21 @@ const Regester: FC = () => {
   const goLogon = () => {
     history.push('/logon');
   }
-  console.log('aaaa');
   return (
     <>
-      <div className="modal">
-        <div className="top">
-          <div className="gear"></div>
-        </div>
-        <div className="bottom">
-          <div className="gear"></div>
-        </div>
-      </div>
-      <div className="registerWapper">
+      {
+        flag
+          ? null
+          : <div className="modal">
+            <div className="top">
+              <div className="gear"></div>
+            </div>
+            <div className="bottom">
+              <div className="gear"></div>
+            </div>
+          </div>
+      }
+      <div className={`registerWapper ${flag ? '' : 'firstCome'}`}>
         <div className="logo"></div>
         <div className="login">
           <List>

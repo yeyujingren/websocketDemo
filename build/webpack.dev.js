@@ -10,7 +10,13 @@ module.exports = WebpackMerge(WebpackConfig, {
     port: 9520,
     host: '0.0.0.0',
     contentBase: path.resolve(__dirname, '../app/public'),
-    compress: true,  // 
+    compress: true,
+    historyApiFallback: {
+      rewrites: [
+        { from: '/', to: `/index.html` },
+      ]
+    },
+
     proxy: {
       '/api': 'http://127.0.0.1:8080',
     },

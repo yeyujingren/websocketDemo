@@ -16,11 +16,11 @@ const ROUTER_CONFIG: RouterPropsInter[] = [
     component: Login,
     exact: true
   },
-  // {
-  //   path: '/logon',
-  //   component: Logon,
-  //   exact: true
-  // }
+  {
+    path: '/logon',
+    component: Logon,
+    exact: true
+  }
 ];
 
 const getRoutes = () => {
