@@ -9,3 +9,6 @@ vendor-manifest.json
 
 # app下的public目录
 app/public/
+
+# 运行产生的文件
+run/
