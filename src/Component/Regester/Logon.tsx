@@ -1,12 +1,15 @@
 import React, { FC } from 'react';
-import {Button} from 'antd-mobile';
-import history from '../utils/history';
 
 const Logon: FC = () => {
+  // const goBack:()=>void = () => {
+  //   history.push('/login')
+  // }
   return(
     <div>
+      <p>
       sry, its not support to login
-      <Button>go back</Button>
+      </p>
+      <a href="/login">go back</a>
     </div>
   )
 }

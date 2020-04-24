@@ -1,6 +1,6 @@
 import React, { FC, FormEvent, useEffect, useState } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
-import history from '../utils/history';
+import history from '../../utils/history';
 import useForm from 'rc-form-hooks';
 
 import './regester.less';
@@ -24,7 +24,7 @@ const Regester: FC = () => {
     e.preventDefault();
     validateFields()
       .then(value => {
-        Toast.info(value.usename);
+        
       })
       .catch(err => {
         Toast.fail(err.message);

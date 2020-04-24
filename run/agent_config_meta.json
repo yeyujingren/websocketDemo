@@ -1,0 +1,336 @@
+{
+  "middleware": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config/config.default.js",
+  "defaultAppName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config/config.default.js",
+  "keys": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "name": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "version": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "author": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "license": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "lint": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "dll": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "dev:client": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "dev:server": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "build": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "start": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "stop": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+      }
+    },
+    "keywords": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "devDependencies": {
+      "@babel/core": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@babel/plugin-transform-typescript": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@babel/preset-env": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@babel/preset-react": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@babel/preset-typescript": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/jest": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/react": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/react-dom": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/react-redux": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@types/react-router-dom": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@typescript-eslint/eslint-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "@typescript-eslint/parser": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "autoprefixer": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "awesome-typescript-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "babel-eslint": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "babel-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "clean-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "copy-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-config-airbnb": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-config-prettier": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-plugin-import": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-plugin-jsx-a11y": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-plugin-react": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "eslint-plugin-react-hooks": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "fork-ts-checker-notifier-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "fork-ts-checker-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "happypack": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "html-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "husky": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "lint-staged": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "optimize-css-assets-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "prettier": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "source-map-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "uglifyjs-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "url-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "webpack": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "webpack-cli": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "webpack-dev-server": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "webpack-merge": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "webpack-pwa-manifest": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "workbox-webpack-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "antd-mobile": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "css-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "egg": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "file-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "history": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "less": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "less-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "mini-css-extract-plugin": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "postcss-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "rc-form-hooks": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "react": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "react-dom": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "react-redux": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "react-router-dom": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "redux": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "redux-thunk": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "style-loader": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "strict": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "depth": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "env": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "level": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "logging": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "port": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/egg/config/config.default.js"
+}

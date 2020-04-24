@@ -1,8 +1,8 @@
 import React, {lazy, LazyExoticComponent, FC, ReactElement} from 'react';
 import {Router, Switch, Route} from 'react-router-dom';
 import {history} from './utils/history';
-import Login from './Component/Regester';
-import Logon from './Component/Logon';
+import Login from './Component/Regester/Regester';
+import Logon from './Component/Regester/Logon';
 
 interface RouterPropsInter {
   path: string;
@@ -11,8 +11,13 @@ interface RouterPropsInter {
   exact: boolean;
 }
 const ROUTER_CONFIG: RouterPropsInter[] = [
+  // {
+  //   path: '/',
+  //   component: Login,
+  //   exact: true
+  // },
   {
-    path: '/',
+    path: '/login',
     component: Login,
     exact: true
   },

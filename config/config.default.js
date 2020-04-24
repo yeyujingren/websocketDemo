@@ -1,5 +1,4 @@
 module.exports = appInfo => {
-  console.log(appInfo)
   const config = {};
 
   // 定义全局中间件
