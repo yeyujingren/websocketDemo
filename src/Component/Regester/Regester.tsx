@@ -6,8 +6,15 @@ import useForm from 'rc-form-hooks';
 import './regester.less';
 
 const Regester: FC = () => {
+
   const [flag, setFlag] = useState(false);
+
   useEffect(() => {
+    // 是否已经登录，若登录则直接跳转到首页
+    if(localStorage.getItem('islogin') === 'true') {
+      history.push('/');
+    }
+    // 验证是否是首次登录，判定是否展示入场动画
     if(window.localStorage.getItem('isFirst') !== 'false') {
       window.localStorage.setItem('isFirst', 'false')
     } else {
@@ -20,20 +27,30 @@ const Regester: FC = () => {
     userpwd: string;
   }>();
 
+  // 用户登录表单验证
   const submitHandler = (e: FormEvent) => {
     e.preventDefault();
     validateFields()
       .then(value => {
-        
+        // if username === 'admin' && pwd === '9520'
+        const {usename, userpwd} = value;
+        if(usename === 'admin' && userpwd === '9520') {
+          localStorage.setItem('islogin', 'true');
+          history.push('/');
+        } else {
+          Toast.fail('哎呀，用户名或者密码有问题呦～')
+        }
       })
       .catch(err => {
         Toast.fail(err.message);
       })
   }
 
+  // 注册路由跳转
   const goLogon = () => {
     history.push('/logon');
   }
+
   return (
     <>
       {

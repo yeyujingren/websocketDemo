@@ -1,21 +1,24 @@
-import React, {lazy, LazyExoticComponent, FC, ReactElement} from 'react';
-import {Router, Switch, Route} from 'react-router-dom';
+import React, {FC, ReactElement, SFC, ComponentClass} from 'react';
+import {Router, Switch, Route, Redirect, RouteComponentProps} from 'react-router-dom';
 import {history} from './utils/history';
 import Login from './Component/Regester/Regester';
 import Logon from './Component/Regester/Logon';
+import Home from './Component/home';
 
 interface RouterPropsInter {
   path: string;
   // component: LazyExoticComponent<FC<{}>>;
-  component: FC;
+  component: FC<RouteComponentProps<any> | undefined> | SFC<RouteComponentProps<any> | undefined> | ComponentClass<RouteComponentProps<any> | undefined>;
   exact: boolean;
+  auth?: boolean;
 }
 const ROUTER_CONFIG: RouterPropsInter[] = [
-  // {
-  //   path: '/',
-  //   component: Login,
-  //   exact: true
-  // },
+  {
+    path: '/',
+    component: Home,
+    exact: true,
+    auth: true
+  },
   {
     path: '/login',
     component: Login,
@@ -29,8 +32,22 @@ const ROUTER_CONFIG: RouterPropsInter[] = [
 ];
 
 const getRoutes = () => {
+  const token: boolean = localStorage.getItem('islogin') === 'true';
+
   const loadedRoutes: ReactElement[] = ROUTER_CONFIG.map((item) => {
-    return <Route path={item.path} component={item.component} key={item.path} exact={item.exact} />;
+    return <Route
+      path={item.path}
+      key={item.path}
+      exact={item.exact} 
+      component={item.component}
+      // render={props => {
+      //   return (
+      //     !item.auth 
+      //       ? (<item.component {...props} />) 
+      //       : (token ? <item.component {...props} /> : <Redirect to='/login' />)
+      //   )
+      // }}
+    />;
   });
 
   return (

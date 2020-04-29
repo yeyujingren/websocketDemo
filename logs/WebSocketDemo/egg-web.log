@@ -348,3 +348,42 @@
 2020-04-24 15:16:35,584 INFO 19017 [egg:core] dump config after load, 3ms
 2020-04-24 15:16:35,590 INFO 19017 [egg-watcher:application] watcher start success
 2020-04-24 15:16:35,596 INFO 19017 [egg:core] dump config after ready, 4ms
+2020-04-26 09:07:16,422 INFO 751 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-26 09:07:16,439 INFO 751 [egg-multipart] stream mode enable
+2020-04-26 09:07:16,494 INFO 751 [egg-static] starting static serve /public/ -> /Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public
+2020-04-26 09:07:16,496 INFO 751 [egg-security] use csrf middleware
+2020-04-26 09:07:16,497 INFO 751 [egg-security] use methodnoallow middleware
+2020-04-26 09:07:16,497 INFO 751 [egg-security] use noopen middleware
+2020-04-26 09:07:16,498 INFO 751 [egg-security] use nosniff middleware
+2020-04-26 09:07:16,498 INFO 751 [egg-security] use xssProtection middleware
+2020-04-26 09:07:16,498 INFO 751 [egg-security] use xframe middleware
+2020-04-26 09:07:16,499 INFO 751 [egg-security] use dta middleware
+2020-04-26 09:07:16,499 INFO 751 [egg-security] compose 7 middlewares into one security middleware
+2020-04-26 09:07:16,506 INFO 751 [egg:core] dump config after load, 4ms
+2020-04-26 09:07:16,515 INFO 751 [egg-watcher:application] watcher start success
+2020-04-26 09:07:16,519 INFO 751 [egg:core] dump config after ready, 3ms
+2020-04-26 12:05:22,573 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-26 12:40:10,932 WARN 751 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 12:40:10,932 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-26 13:06:05,933 WARN 751 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 13:06:05,934 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-26 18:05:38,635 WARN 751 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 18:05:38,635 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-26 20:03:29,021 WARN 751 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 20:03:29,021 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-26 20:24:43,994 WARN 751 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-04-26 20:24:44,001 WARN 751 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-29 15:27:34,838 INFO 9948 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-29 15:27:34,858 INFO 9948 [egg-multipart] stream mode enable
+2020-04-29 15:27:34,945 INFO 9948 [egg-static] starting static serve /public/ -> /Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public
+2020-04-29 15:27:34,947 INFO 9948 [egg-security] use csrf middleware
+2020-04-29 15:27:34,948 INFO 9948 [egg-security] use methodnoallow middleware
+2020-04-29 15:27:34,949 INFO 9948 [egg-security] use noopen middleware
+2020-04-29 15:27:34,949 INFO 9948 [egg-security] use nosniff middleware
+2020-04-29 15:27:34,950 INFO 9948 [egg-security] use xssProtection middleware
+2020-04-29 15:27:34,951 INFO 9948 [egg-security] use xframe middleware
+2020-04-29 15:27:34,951 INFO 9948 [egg-security] use dta middleware
+2020-04-29 15:27:34,951 INFO 9948 [egg-security] compose 7 middlewares into one security middleware
+2020-04-29 15:27:34,960 INFO 9948 [egg:core] dump config after load, 4ms
+2020-04-29 15:27:34,970 INFO 9948 [egg-watcher:application] watcher start success
+2020-04-29 15:27:34,976 INFO 9948 [egg:core] dump config after ready, 4ms
