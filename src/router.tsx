@@ -39,14 +39,14 @@ const getRoutes = () => {
       path={item.path}
       key={item.path}
       exact={item.exact} 
-      component={item.component}
-      // render={props => {
-      //   return (
-      //     !item.auth 
-      //       ? (<item.component {...props} />) 
-      //       : (token ? <item.component {...props} /> : <Redirect to='/login' />)
-      //   )
-      // }}
+      // component={item.component}
+      render={props => {
+        return (
+          !item.auth 
+            ? (<item.component {...props} />) 
+            : (token ? <item.component {...props} /> : <Redirect to='/login' />)
+        )
+      }}
     />;
   });
 

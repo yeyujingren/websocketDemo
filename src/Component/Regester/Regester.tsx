@@ -10,17 +10,13 @@ const Regester: FC = () => {
   const [flag, setFlag] = useState(false);
 
   useEffect(() => {
-    // 是否已经登录，若登录则直接跳转到首页
-    if(localStorage.getItem('islogin') === 'true') {
-      history.push('/');
-    }
     // 验证是否是首次登录，判定是否展示入场动画
     if(window.localStorage.getItem('isFirst') !== 'false') {
       window.localStorage.setItem('isFirst', 'false')
     } else {
       setFlag(true);
     }
-  })
+  }, [localStorage.getItem('islogin')])
 
   const { getFieldDecorator, validateFields } = useForm<{
     usename: string;
