@@ -1,4 +1,4 @@
-import React, { FC, FormEvent, useEffect, useState } from 'react';
+import React, { FC, FormEvent, useEffect, useState, useMemo } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
 import history from '../../utils/history';
 import useForm from 'rc-form-hooks';
@@ -16,7 +16,7 @@ const Regester: FC = () => {
     } else {
       setFlag(true);
     }
-  }, [localStorage.getItem('islogin')])
+  }, [])
 
   const { getFieldDecorator, validateFields } = useForm<{
     usename: string;
