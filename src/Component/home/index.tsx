@@ -1,5 +1,7 @@
-import React, { FC, useState, ReactElement, ReactHTMLElement } from 'react';
+import React, { FC, useState } from 'react';
 import { TabBar } from 'antd-mobile';
+
+import './index.less';
 
 interface Props {
 
@@ -33,7 +35,7 @@ const Home: FC = (props: Props) => {
     </div>
   )
   return (
-    <div style={fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+    <div className="homeWapper">
       <TabBar
         unselectedTintColor="#949494"
         tintColor="#33A3F4"
@@ -41,78 +43,32 @@ const Home: FC = (props: Props) => {
         hidden={hidden}
       >
         <TabBar.Item
-          title="Life"
-          key="Life"
-          icon={<div style={{
-            width: '22px',
-            height: '22px',
-            background: 'url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  21px 21px no-repeat'
-          }}
-          />
+          title="Msg"
+          key="Msg"
+          icon={
+            <div className="iconfont">&#xe631;</div>
           }
-          selectedIcon={<div style={{
-            width: '22px',
-            height: '22px',
-            background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat'
-          }}
-          />
+          selectedIcon={
+            <div className="iconfont selected">&#xe631;</div>
           }
           selected={tab === 'blueTab'}
-          badge={1}
+          badge={100}
           onPress={() => {
             steTab('blueTab');
           }}
           data-seed="logId"
         >
-          {renderContent('Life')}
+          {renderContent('msg')}
         </TabBar.Item>
         <TabBar.Item
           icon={
-            <div style={{
-              width: '22px',
-              height: '22px',
-              background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat'
-            }}
-            />
+            <div className="iconfont">&#xe609;</div>
           }
           selectedIcon={
-            <div style={{
-              width: '22px',
-              height: '22px',
-              background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat'
-            }}
-            />
+            <div className="iconfont selected">&#xe609;</div>
           }
-          title="Koubei"
-          key="Koubei"
-          badge="new"
-          selected={tab === 'redTab'}
-          onPress={() => {
-            steTab('redTab');
-          }}
-          data-seed="logId1"
-        >
-          {renderContent('Koubei')}
-        </TabBar.Item>
-        <TabBar.Item
-          icon={
-            <div style={{
-              width: '22px',
-              height: '22px',
-              background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  21px 21px no-repeat'
-            }}
-            />
-          }
-          selectedIcon={
-            <div style={{
-              width: '22px',
-              height: '22px',
-              background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  21px 21px no-repeat'
-            }}
-            />
-          }
-          title="Friend"
-          key="Friend"
+          title="Fri"
+          key="Fri"
           dot
           selected={tab === 'greenTab'}
           onPress={() => {
@@ -122,10 +78,15 @@ const Home: FC = (props: Props) => {
           {renderContent('Friend')}
         </TabBar.Item>
         <TabBar.Item
-          icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
-          selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
-          title="My"
-          key="my"
+          icon={
+            <div className="iconfont">&#xe7e4;</div>
+          }
+          selectedIcon={
+            <div className="iconfont selected">&#xe7e4;</div>
+          }
+          title="Per"
+          key="Per"
+          dot
           selected={tab === 'yellowTab'}
           onPress={() => {
             steTab('yellowTab');
