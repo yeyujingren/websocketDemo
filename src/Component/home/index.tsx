@@ -1,6 +1,6 @@
 import React, { FC, useState, Suspense } from 'react';
 import { TabBar } from 'antd-mobile';
-import {LazyComponent, Message} from './LazyImport';
+import {LazyComponent, Message, Friends, Persional} from './LazyImport';
 
 import './index.less';
 
@@ -10,12 +10,27 @@ interface RenderContentProps {
 
 const Home: FC = () => {
 
-  const [tab, steTab] = useState('redTab');
+  const [tab, steTab] = useState('Msg');
 
+  // 根据不同的标签render不同的页面
+  const switchComponentHandler: RenderContentProps = (tags: string) => {
+    switch (tags) {
+      case 'Msg':
+        return <Message />
+      case 'Fri':
+        return <Friends />
+      case 'Per':
+        return <Persional />
+      default:
+        return <Message />
+    }
+  }
+
+  // 异步加载tab对应页面
   const renderContent: RenderContentProps = (flag: string) => {
     return (
       <Suspense fallback={<div>Loading...</div>}>
-        <Message />
+        {switchComponentHandler(flag)}
       </Suspense>
     )
   }
@@ -35,10 +50,10 @@ const Home: FC = () => {
           selectedIcon={
             <div className="iconfont selected">&#xe631;</div>
           }
-          selected={tab === 'blueTab'}
+          selected={tab === 'Msg'}
           badge={100}
           onPress={() => {
-            steTab('blueTab');
+            steTab('Msg');
           }}
           data-seed="logId"
         >
@@ -54,9 +69,9 @@ const Home: FC = () => {
           title="Fri"
           key="Fri"
           badge={3}
-          selected={tab === 'greenTab'}
+          selected={tab === 'Fri'}
           onPress={() => {
-            steTab('greenTab');
+            steTab('Fri');
           }}
         >
           {renderContent('Fri')}
@@ -71,9 +86,9 @@ const Home: FC = () => {
           title="Per"
           key="Per"
           dot
-          selected={tab === 'yellowTab'}
+          selected={tab === 'Per'}
           onPress={() => {
-            steTab('yellowTab');
+            steTab('Per');
           }}
         >
           {renderContent('Per')}
