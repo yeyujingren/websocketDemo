@@ -1,46 +1,30 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, Suspense } from 'react';
 import { TabBar } from 'antd-mobile';
+import {LazyComponent, Message} from './LazyImport';
 
 import './index.less';
 
-interface Props {
-
+interface RenderContentProps {
+  (a: string): JSX.Element
 }
 
-const Home: FC = (props: Props) => {
+const Home: FC = () => {
 
   const [tab, steTab] = useState('redTab');
-  const [hidden, setHidden] = useState(false);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const renderContent: (a: string) => JSX.Element = (pageText: string) => (
-    <div style={{ backgroundColor: 'white', height: '100%', textAlign: 'center' }}>
-      <div style={{ paddingTop: 60 }}>Clicked “{pageText}” tab， show “{pageText}” information</div>
-      <div style={{ display: 'block', marginTop: 40, marginBottom: 20, color: '#108ee9' }}
-        onClick={(e) => {
-          e.preventDefault();
-          setHidden(!hidden);
-        }}
-      >
-        Click to show/hide tab-bar
-      </div>
-      <div style={{ display: 'block', marginBottom: 600, color: '#108ee9' }}
-        onClick={(e) => {
-          e.preventDefault()
-          setFullScreen(!fullScreen);
-        }}
-      >
-        Click to switch fullscreen
-      </div>
-    </div>
-  )
+  const renderContent: RenderContentProps = (flag: string) => {
+    return (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Message />
+      </Suspense>
+    )
+  }
   return (
     <div className="homeWapper">
       <TabBar
         unselectedTintColor="#949494"
         tintColor="#33A3F4"
         barTintColor="white"
-        hidden={hidden}
       >
         <TabBar.Item
           title="Msg"
@@ -69,13 +53,13 @@ const Home: FC = (props: Props) => {
           }
           title="Fri"
           key="Fri"
-          dot
+          badge={3}
           selected={tab === 'greenTab'}
           onPress={() => {
             steTab('greenTab');
           }}
         >
-          {renderContent('Friend')}
+          {renderContent('Fri')}
         </TabBar.Item>
         <TabBar.Item
           icon={
@@ -92,7 +76,7 @@ const Home: FC = (props: Props) => {
             steTab('yellowTab');
           }}
         >
-          {renderContent('My')}
+          {renderContent('Per')}
         </TabBar.Item>
       </TabBar>
     </div>
