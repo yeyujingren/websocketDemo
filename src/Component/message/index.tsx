@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { InputItem, Button } from 'antd-mobile';
 // import useForm from 'rc-form-hooks';
 
@@ -10,17 +10,33 @@ const Message: FC = () => {
   // const { getFieldDecorator, validateFields } = useForm<{
   //   message: any;
   // }>();
-
+  const initMsgList: string[] = [];
   const [message, setMessage] = useState('');
+  const [msgList, setMsgList] = useState(initMsgList);
 
   const writeMsgHandler = (msg: string) => {
     setMessage(msg);
   }
 
+  const sendMsgHandler = () => {
+    const oMsgList: string[] = [...msgList];
+    oMsgList.push(message);
+    setMessage('');
+    setMsgList(oMsgList);
+  }
+
+  useEffect(() => {
+    // console.log('update!')
+  })
+
   return (
     <div className="messageWapper">
       <div className="messageListWapper">
-        <MessageItem msg="hello😄，🔥" />
+        {
+          msgList.map(item => {
+            return <MessageItem msg={item} />
+          })
+        }
       </div>
       <div className="sendMsgWapper">
         <InputItem
@@ -32,6 +48,7 @@ const Message: FC = () => {
         <Button
           type="primary"
           size="small"
+          onClick={sendMsgHandler}
         >发送</Button>
       </div>
     </div>

@@ -1,5 +1,7 @@
 const path = require("path");
 const os = require('os');
+const px2rem = require('postcss-px2rem');
+const flexFixs = require('postcss-flexbugs-fixes');
 const HappyPack = require('happypack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -68,7 +70,17 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [require('autoprefixer')]
+              ident: "postcss",
+              // plugins: [require('autoprefixer')]
+              plugins: (ctx) => {
+                return [
+                  flexFixs,
+                  // fix antd-mobile v2.3.0 样式比之前版本减少一半问题.
+                  px2rem({
+                    remUnit: /antd-mobile/.test(ctx.resourcePath) ? 50 : 100
+                  })
+                ]
+              }
             }
           },
           {
