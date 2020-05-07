@@ -7,7 +7,7 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "dll": "webpack --config build/webpack.dll.config.js",
     "dev:client": "webpack-dev-server --config ./build/webpack.dev.js --progress --fix --title=ws-$npm_package_name",
-    "dev:server": "egg-bin dev --port 3000 --title=egg-server-$npm_package_name",
+    "dev:server": "egg-bin dev --port 3000 --title=egg-server-$npm_package_name --sticky",
     "build": "webpack --config ./build/webpack.prod.js --fix",
     "start": "npx eggctl start --port 8080 --daemon --title=egg-server-$npm_package_name",
     "stop": "npx eggctl stop --title=egg-server-$npm_package_name"

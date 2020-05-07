@@ -1,0 +1,42 @@
+.messageWapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .messageListWapper {
+    height: 100%;
+    .messageItem {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .msgContent {
+        max-width: 70%;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-size: 20px;
+        background-color: rgba(154, 205, 50, .6);
+        border-radius: 5px;
+        padding: 5px;
+        line-height: 27px;
+      }
+      .arrow {
+        width: 0px;
+        height: 0px;
+        border: 8px solid transparent;
+        border-left: 8px solid rgba(154, 205, 50, .6);
+      }
+    }
+  }
+  .sendMsgWapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 10px;
+    .am-input-label {
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+}

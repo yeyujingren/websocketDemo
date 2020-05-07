@@ -13,5 +13,16 @@ module.exports = appInfo => {
   //   }
   // }
 
+  // 开启websocket
+  config.io = {
+    init: { },
+    namespace: {
+      '/': {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      }
+    }
+  }
+
   return config;
 }
