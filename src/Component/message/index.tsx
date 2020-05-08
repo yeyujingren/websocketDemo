@@ -8,7 +8,10 @@ import './index.less';
 
 const Message: FC = () => {
   // 初始化消息相关默认值
-  const initMsgList: MsgProps[] = [];
+  const initMsgList: MsgProps[] = [{
+    context: 'hello my dear😄',
+    msgType: MsgTypes.Receive
+  }];
   const initMsg: MsgProps = {
     context: '',
     msgType: MsgTypes.Send
