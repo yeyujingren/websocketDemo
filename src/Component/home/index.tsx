@@ -1,4 +1,4 @@
-import React, { FC, useState, Suspense } from 'react';
+import React, { FC, useState, Suspense, useEffect } from 'react';
 import { TabBar } from 'antd-mobile';
 import {TabsTyps, RenderContentProps} from './type';
 
