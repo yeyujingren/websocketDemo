@@ -1,4 +1,4 @@
-import React, { FC, FormEvent, useEffect, useState, useMemo } from 'react';
+import React, { FC, FormEvent, useEffect, useState } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
 import history from '../../utils/history';
 import useForm from 'rc-form-hooks';
