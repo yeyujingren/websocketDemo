@@ -1,25 +1,23 @@
 import React, { FC, useState, Suspense } from 'react';
 import { TabBar } from 'antd-mobile';
-import {LazyComponent, Message, Friends, Persional} from './LazyImport';
+import {TabsTyps, RenderContentProps} from './type';
+
+import { Message, Friends, Persional} from './LazyImport';
 
 import './index.less';
 
-interface RenderContentProps {
-  (a: string): JSX.Element
-}
-
 const Home: FC = () => {
 
-  const [tab, steTab] = useState('Msg');
+  const [tab, steTab] = useState(TabsTyps.Msg);
 
   // 根据不同的标签render不同的页面
-  const switchComponentHandler: RenderContentProps = (tags: string) => {
+  const switchComponentHandler: RenderContentProps = (tags: TabsTyps) => {
     switch (tags) {
-      case 'Msg':
+      case TabsTyps.Msg:
         return <Message />
-      case 'Fri':
+      case TabsTyps.Fri:
         return <Friends />
-      case 'Per':
+      case TabsTyps.Per:
         return <Persional />
       default:
         return <Message />
@@ -27,7 +25,7 @@ const Home: FC = () => {
   }
 
   // 异步加载tab对应页面
-  const renderContent: RenderContentProps = (flag: string) => {
+  const renderContent: RenderContentProps = (flag: TabsTyps) => {
     return (
       <Suspense fallback={<div>Loading...</div>}>
         {switchComponentHandler(flag)}
@@ -43,21 +41,21 @@ const Home: FC = () => {
       >
         <TabBar.Item
           title="Msg"
-          key="Msg"
+          key={TabsTyps.Msg}
           icon={
             <div className="iconfont">&#xe631;</div>
           }
           selectedIcon={
             <div className="iconfont selected">&#xe631;</div>
           }
-          selected={tab === 'Msg'}
+          selected={tab === TabsTyps.Msg}
           badge={100}
           onPress={() => {
-            steTab('Msg');
+            steTab(TabsTyps.Msg);
           }}
           data-seed="logId"
         >
-          {renderContent('msg')}
+          {renderContent(TabsTyps.Msg)}
         </TabBar.Item>
         <TabBar.Item
           icon={
@@ -67,14 +65,14 @@ const Home: FC = () => {
             <div className="iconfont selected">&#xe609;</div>
           }
           title="Fri"
-          key="Fri"
+          key={TabsTyps.Fri}
           badge={3}
-          selected={tab === 'Fri'}
+          selected={tab === TabsTyps.Fri}
           onPress={() => {
-            steTab('Fri');
+            steTab(TabsTyps.Fri);
           }}
         >
-          {renderContent('Fri')}
+          {renderContent(TabsTyps.Fri)}
         </TabBar.Item>
         <TabBar.Item
           icon={
@@ -84,14 +82,14 @@ const Home: FC = () => {
             <div className="iconfont selected">&#xe7e4;</div>
           }
           title="Per"
-          key="Per"
+          key= {TabsTyps.Per}
           dot
-          selected={tab === 'Per'}
+          selected={tab === TabsTyps.Per}
           onPress={() => {
-            steTab('Per');
+            steTab(TabsTyps.Per);
           }}
         >
-          {renderContent('Per')}
+          {renderContent(TabsTyps.Per)}
         </TabBar.Item>
       </TabBar>
     </div>
