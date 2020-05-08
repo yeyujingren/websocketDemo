@@ -1,46 +1,46 @@
 import React, { FC, useState, useEffect } from 'react';
 import { InputItem, Button } from 'antd-mobile';
-// import useForm from 'rc-form-hooks';
 
+import {MsgProps, MsgTypes} from './type';
 import MessageItem from './messageItem';
 
 import './index.less';
 
 const Message: FC = () => {
-  // const { getFieldDecorator, validateFields } = useForm<{
-  //   message: any;
-  // }>();
-  const initMsgList: string[] = [];
-  const [message, setMessage] = useState('');
+  // 初始化消息相关默认值
+  const initMsgList: MsgProps[] = [];
+  const initMsg: MsgProps = {
+    context: '',
+    msgType: MsgTypes.Send
+  }
+
+  // init state
+  const [message, setMessage] = useState(initMsg);
   const [msgList, setMsgList] = useState(initMsgList);
 
   const writeMsgHandler = (msg: string) => {
-    setMessage(msg);
+    setMessage({context: msg, msgType: MsgTypes.Send});
   }
 
   const sendMsgHandler = () => {
-    const oMsgList: string[] = [...msgList];
+    const oMsgList: MsgProps[] = [...msgList];
     oMsgList.push(message);
-    setMessage('');
+    setMessage(initMsg);
     setMsgList(oMsgList);
   }
-
-  useEffect(() => {
-    // console.log('update!')
-  })
 
   return (
     <div className="messageWapper">
       <div className="messageListWapper">
         {
           msgList.map(item => {
-            return <MessageItem msg={item} />
+            return <MessageItem msgType={item.msgType} msg={item.context} />
           })
         }
       </div>
       <div className="sendMsgWapper">
         <InputItem
-          value={message}
+          value={message.context}
           onChange={(msg) => writeMsgHandler(msg)}
         >
           <div className="iconfont">&#xe631;</div>

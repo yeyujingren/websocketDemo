@@ -1,13 +1,10 @@
 import React, { FC, SFC, ReactElement } from 'react';
+import {MsgItemProps} from './type';
 
-interface Props {
-  msg: string;
-}
-
-const MessageItem: FC<Props> = (props: Props) => {
-  const {msg} = props;
+const MessageItem: FC<MsgItemProps> = (props: MsgItemProps) => {
+  const {msg, msgType} = props;
   return (
-    <div className="messageItem">
+    <div className={`messageItem msgType_${msgType}`}>
       <div className="arrow"></div>
       <div className="msgContent">
         {msg}

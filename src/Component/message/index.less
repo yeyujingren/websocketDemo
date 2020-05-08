@@ -10,13 +10,28 @@
       align-items: center;
       flex-direction: row-reverse;
       margin: 20px 0;
+      &.msgType_0 {
+        .msgContent {
+          background-color: rgba(154, 205, 50, .6);
+        }
+        .arrow {
+          border-left: 8px solid rgba(154, 205, 50, .6);
+        }
+      };
+      &.msgType_1 {
+        .msgContent {
+          background-color: rgba(142, 210, 236, 0.6);
+        }
+        .arrow {
+          border-left: 8px solid rgba(142, 210, 236, 0.6);;
+        }
+      };
       .msgContent {
         max-width: 70%;
         word-wrap: break-word;
         word-break: break-all;
         font-size: 30px;
         color: rgba(0, 0, 0, .6);
-        background-color: rgba(154, 205, 50, .6);
         border-radius: 10px;
         padding: 10px;
         line-height: 54px;
@@ -25,7 +40,6 @@
         width: 0px;
         height: 0px;
         border: 8px solid transparent;
-        border-left: 8px solid rgba(154, 205, 50, .6);
       }
     }
   }
