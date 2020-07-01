@@ -167,7 +167,7 @@
         "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
         "dll": "webpack --config build/webpack.dll.config.js",
         "dev:client": "webpack-dev-server --config ./build/webpack.dev.js --progress --fix --title=ws-$npm_package_name",
-        "dev:server": "egg-bin dev --port 3000 --title=egg-server-$npm_package_name",
+        "dev:server": "egg-bin dev --port 3000 --title=egg-server-$npm_package_name --sticky",
         "build": "webpack --config ./build/webpack.prod.js --fix",
         "start": "npx eggctl start --port 8080 --daemon --title=egg-server-$npm_package_name",
         "stop": "npx eggctl stop --title=egg-server-$npm_package_name"
@@ -191,10 +191,11 @@
         "@babel/preset-typescript": "^7.8.3",
         "@types/jest": "^25.1.4",
         "@types/node": "^13.9.4",
-        "@types/react": "^16.9.23",
+        "@types/react": "^16.9.34",
         "@types/react-dom": "^16.9.5",
         "@types/react-redux": "^7.1.7",
         "@types/react-router-dom": "^5.1.3",
+        "@types/websocket": "^1.0.0",
         "@typescript-eslint/eslint-plugin": "^2.23.0",
         "@typescript-eslint/parser": "^2.23.0",
         "autoprefixer": "^9.7.4",
@@ -233,14 +234,18 @@
       },
       "dependencies": {
         "antd-mobile": "^2.3.1",
+        "create-react-app": "^3.4.1",
         "css-loader": "^3.4.1",
         "egg": "^2.26.0",
         "file-loader": "^5.0.2",
+        "global": "^4.4.0",
         "history": "^4.10.1",
         "less": "^3.11.1",
         "less-loader": "^5.0.0",
         "mini-css-extract-plugin": "^0.9.0",
+        "postcss-flexbugs-fixes": "^4.2.1",
         "postcss-loader": "^3.0.0",
+        "postcss-px2rem": "^0.3.0",
         "rc-form-hooks": "^0.0.1-beta.18",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
@@ -248,7 +253,8 @@
         "react-router-dom": "^5.1.2",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
-        "style-loader": "^1.1.2"
+        "style-loader": "^1.1.2",
+        "websocket": "^1.0.31"
       }
     },
     "baseDir": "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo",
@@ -350,6 +356,15 @@
     "onClientError": null,
     "middleware": [],
     "defaultAppName": "WebSocketDemo",
+    "io": {
+      "init": {},
+      "namespace": {
+        "/": {
+          "connectionMiddleware": [],
+          "packetMiddleware": []
+        }
+      }
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"

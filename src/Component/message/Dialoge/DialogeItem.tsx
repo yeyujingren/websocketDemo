@@ -1,7 +1,7 @@
-import React, { FC, SFC, ReactElement } from 'react';
-import {MsgItemProps} from './type';
+import React, { FC, } from 'react';
+import {MsgItemProps} from '../type';
 
-const MessageItem: FC<MsgItemProps> = (props: MsgItemProps) => {
+const DialogeItem: FC<MsgItemProps> = (props: MsgItemProps) => {
   const {msg, msgType} = props;
   return (
     <div className={`messageItem msgType_${msgType}`}>
@@ -13,4 +13,4 @@ const MessageItem: FC<MsgItemProps> = (props: MsgItemProps) => {
   )
 }
 
-export default MessageItem;
+export default DialogeItem;

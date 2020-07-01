@@ -4,6 +4,7 @@ import {history} from './utils/history';
 import Login from './Component/Regester/Regester';
 import Logon from './Component/Regester/Logon';
 import Home from './Component/home';
+import DialogeList from './Component/message/Dialoge';
 
 interface RouterPropsInter {
   path: string;
@@ -14,12 +15,6 @@ interface RouterPropsInter {
 }
 const ROUTER_CONFIG: RouterPropsInter[] = [
   {
-    path: '/',
-    component: Home,
-    exact: true,
-    auth: true
-  },
-  {
     path: '/login',
     component: Login,
     exact: true
@@ -28,11 +23,22 @@ const ROUTER_CONFIG: RouterPropsInter[] = [
     path: '/logon',
     component: Logon,
     exact: true
-  }
+  },
+  {
+    path: '/dialogue/:id',
+    component: DialogeList,
+    exact: true,
+    auth: true
+  },
+  {
+    path: '/',
+    component: Home,
+    exact: true,
+    auth: true
+  },
 ];
 
 const getRoutes = () => {
-  const token: boolean = localStorage.getItem('islogin') === 'true';
 
   const loadedRoutes: ReactElement[] = ROUTER_CONFIG.map((item) => {
     return <Route
@@ -41,6 +47,7 @@ const getRoutes = () => {
       exact={item.exact} 
       // component={item.component}
       render={props => {
+        const token: boolean = localStorage.getItem('islogin') === 'true';
         return (
           !item.auth 
             ? (<item.component {...props} />) 

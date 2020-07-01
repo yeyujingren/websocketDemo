@@ -164,3 +164,130 @@ hostname: yeyujingrendeMacBook-Pro.local
 2020-04-29 15:27:34,378 INFO 9947 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"
 2020-04-29 15:27:34,378 INFO 9947 [egg-watcher:agent] watcher start success
 2020-04-29 15:27:34,389 INFO 9947 [egg:core] dump config after ready, 3ms
+2020-06-16 16:14:41,322 INFO 5493 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-16 16:14:41,333 INFO 5493 [egg:core] dump config after load, 7ms
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: ["/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"]
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app"
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config"
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks"
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy"
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"
+2020-06-16 16:14:41,372 INFO 5493 [egg-watcher:agent] watcher start success
+2020-06-16 16:14:41,384 INFO 5493 [egg:core] dump config after ready, 4ms
+2020-06-16 18:36:15,571 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 2192689ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-16 18:47:21,593 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 625360ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-16 22:36:33,621 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 13752027ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-17 17:35:43,563 INFO 12512 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-17 17:35:43,572 INFO 12512 [egg:core] dump config after load, 5ms
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: ["/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"]
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app"
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config"
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks"
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy"
+2020-06-17 17:35:43,605 INFO 12512 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"
+2020-06-17 17:35:43,606 INFO 12512 [egg-watcher:agent] watcher start success
+2020-06-17 17:35:43,618 INFO 12512 [egg:core] dump config after ready, 4ms
+2020-06-17 18:10:52,718 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 68260ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-17 22:00:28,618 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 13775497ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 06:10:55,213 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 29426027ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 07:45:11,688 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 5656446ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 09:37:58,434 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 6766727ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-30 16:34:51,651 INFO 19759 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-06-30 16:34:51,662 INFO 19759 [egg:core] dump config after load, 7ms
+2020-06-30 16:34:51,698 INFO 19759 [egg-watcher] Start watching: ["/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"]
+2020-06-30 16:34:51,698 INFO 19759 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app"
+2020-06-30 16:34:51,698 INFO 19759 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config"
+2020-06-30 16:34:51,698 INFO 19759 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks"
+2020-06-30 16:34:51,698 INFO 19759 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy"
+2020-06-30 16:34:51,699 INFO 19759 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"
+2020-06-30 16:34:51,699 INFO 19759 [egg-watcher:agent] watcher start success
+2020-06-30 16:34:51,713 INFO 19759 [egg:core] dump config after ready, 4ms
+2020-07-01 15:03:54,026 INFO 26016 [egg:logger] init all loggers with options: {"dir":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/logs/WebSocketDemo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"WebSocketDemo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-07-01 15:03:54,036 INFO 26016 [egg:core] dump config after load, 6ms
+2020-07-01 15:03:54,068 INFO 26016 [egg-watcher] Start watching: ["/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy","/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"]
+2020-07-01 15:03:54,068 INFO 26016 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app"
+2020-07-01 15:03:54,069 INFO 26016 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/config"
+2020-07-01 15:03:54,069 INFO 26016 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks"
+2020-07-01 15:03:54,069 INFO 26016 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/mocks_proxy"
+2020-07-01 15:03:54,069 INFO 26016 [egg-watcher] Start watching: "/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app.js"
+2020-07-01 15:03:54,069 INFO 26016 [egg-watcher:agent] watcher start success
+2020-07-01 15:03:54,082 INFO 26016 [egg:core] dump config after ready, 3ms
+2020-07-01 15:05:59,981 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/index.html","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9193296,"size":910,"blocks":8,"atimeMs":1593586738476.5408,"mtimeMs":1593587159918.8274,"ctimeMs":1593587159918.8274,"birthtimeMs":1593586737682.4229,"atime":"2020-07-01T06:58:58.477Z","mtime":"2020-07-01T07:05:59.919Z","ctime":"2020-07-01T07:05:59.919Z","birthtime":"2020-07-01T06:58:57.682Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-07-01 15:06:00,107 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/index.html","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9193296,"size":910,"blocks":8,"atimeMs":1593587160096.0435,"mtimeMs":1593587160096.375,"ctimeMs":1593587160096.375,"birthtimeMs":1593586737682.4229,"atime":"2020-07-01T07:06:00.096Z","mtime":"2020-07-01T07:06:00.096Z","ctime":"2020-07-01T07:06:00.096Z","birthtime":"2020-07-01T06:58:57.682Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-07-01 15:06:00,158 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/index.html","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9193296,"size":910,"blocks":8,"atimeMs":1593587160096.0435,"mtimeMs":1593587160096.375,"ctimeMs":1593587160096.375,"birthtimeMs":1593586737682.4229,"atime":"2020-07-01T07:06:00.096Z","mtime":"2020-07-01T07:06:00.096Z","ctime":"2020-07-01T07:06:00.096Z","birthtime":"2020-07-01T06:58:57.682Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-07-01 15:06:25,717 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/index.html","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9193296,"size":911,"blocks":8,"atimeMs":1593587164668.925,"mtimeMs":1593587185619.0757,"ctimeMs":1593587185619.0757,"birthtimeMs":1593586737682.4229,"atime":"2020-07-01T07:06:04.669Z","mtime":"2020-07-01T07:06:25.619Z","ctime":"2020-07-01T07:06:25.619Z","birthtime":"2020-07-01T06:58:57.682Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-07-01 15:07:12,938 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/3","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,939 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/4","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,939 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/android_chrome.png","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,940 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/2","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,940 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/chunk-libs","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,940 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/favicon.ico","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,941 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/icon_192x192.317624aa03b2fbfca2eb563d286b0caa.png","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,941 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/icon_192x192.d03b8383ee2d190540bd5448f6100309.png","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,941 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/image","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,942 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/index.html","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,943 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/js","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,943 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/launcher-icon.png","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,944 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/main","remove":true,"isDirectory":true,"isFile":false}
+2020-07-01 15:07:12,944 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/manifest.ec0b6f48.json","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,944 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/manifest.json","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,945 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/service-worker.js","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,945 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/service-worker.js.map","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,945 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/workbox-24aa846e.js","remove":true,"isDirectory":false,"isFile":false}
+2020-07-01 15:07:12,945 INFO 26016 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/app/public/workbox-24aa846e.js.map","remove":true,"isDirectory":false,"isFile":false}

@@ -10,6 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../static/js'),
+    // path: path.resolve(__dirname, '../app/public/static/js'),
     filename: '[name].dll.js',
     // 需要同webpack.DllPlugin 中的“name: '[name]_library'”保持一直
     library: '[name]_library',
@@ -18,7 +19,8 @@ module.exports = {
     new webpack.DllPlugin({
       path: path.resolve(__dirname, '../[name]-manifest.json'),
       name: '[name]_library',
-      context: __dirname
+      context: __dirname,
+      // entryOnly: true,
     })
   ]
 }

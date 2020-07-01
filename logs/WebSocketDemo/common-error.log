@@ -46,3 +46,67 @@ name: "ClusterClientNoResponseError"
 pid: 750
 hostname: yeyujingrendeMacBook-Pro.local
 
+2020-06-16 18:36:15,571 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 2192689ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-16 18:47:21,592 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 625360ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-16 22:36:33,621 ERROR 5493 nodejs.ClusterClientNoResponseError: client no response in 13752027ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 5493
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-17 18:10:52,718 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 68260ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-17 22:00:28,316 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 13775497ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 06:10:55,198 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 29426027ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 07:45:11,687 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 5656446ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+
+2020-06-18 09:37:58,429 ERROR 12512 nodejs.ClusterClientNoResponseError: client no response in 6766727ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/yeyujingren/Desktop/FE code/persional/react-project/websocketDemo/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12512
+hostname: yeyujingrendeMacBook-Pro.local
+

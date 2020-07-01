@@ -200,7 +200,8 @@ module.exports = {
     }),
     new Webpack.DllReferencePlugin({
       context: __dirname,
-      manifest: require('../vendor-manifest.json')
+      manifest: require('../vendor-manifest.json'),
+      scope: '/'
     }),
     new CopyWebpackPlugin([  // copy生成的静态文件到app/public目录下面
       {from: 'static', to: path.resolve(__dirname, '../app/public')}
