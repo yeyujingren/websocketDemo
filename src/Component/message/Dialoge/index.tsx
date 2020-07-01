@@ -29,6 +29,8 @@ const Dialoge: FC = () => {
   const writeMsgHandler = (msg: string) => {
     if(isDisable && msg.length !== 0) {
       setDisable(false);
+    } else if(!isDisable && msg.length ===0) {
+      setDisable(true)
     }
     setMessage({context: msg, msgType: MsgTypes.Send});
   }
