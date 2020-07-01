@@ -81,7 +81,7 @@ const Dialoge: FC = () => {
     oMsgList.push(message);
     setMessage(initMsg);
     setMsgList(oMsgList);
-
+    setDisable(true);
     // 发送给服务端进行转发
     // client.send(JSON.stringify({
     //   type: 'messageSend',
