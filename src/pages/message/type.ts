@@ -1,19 +1,15 @@
 export enum MsgTypes {
-  Send,
-  Receive,
-  Tips
+  "Send",
+  "Receive",
+  "ComeTips",
+  "LeaveTips",
 }
 
 export interface MsgProps {
+  userName: string;
   content: string;
-  msgType: MsgTypes;
+  type: MsgTypes;
 }
-
-export interface MsgItemProps {
-  msg: string;
-  msgType: MsgTypes
-}
-
 
 
 

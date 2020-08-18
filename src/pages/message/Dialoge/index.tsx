@@ -9,22 +9,27 @@ import MessageTips from '../../../Component/MessageTips';
 
 import './style.less';
 
+const DEFAULT_NAME = 'yeyujingren';
+
 const client = new W3CWbsocket('ws://10.130.170.201:8000');
 
 const Dialoge: React.FC = () => {
   // 初始化消息相关默认值
   const initMsgList: MsgProps[] = [{
-    content: 'aha, its a sunnly day, isn\'t it?😄',
-    msgType: MsgTypes.Receive
+    content: 'hi~my dear. It has been a long time. How are you?',
+    type: MsgTypes.Receive,
+    userName: DEFAULT_NAME
   }];
-  const initMsg: MsgProps = {
+
+  const initProps = {
     content: '',
-    msgType: MsgTypes.Send
+    type: MsgTypes.Send,
+    userName: DEFAULT_NAME
   }
 
   // init state
-  const [message, setMessage] = useState(initMsg);
-  const [msgList, setMsgList] = useState(initMsgList);
+  const [message, setMessage] = useState<MsgProps>(initProps);
+  const [msgList, setMsgList] = useState<Array<MsgProps>>(initMsgList);
   const [isDisable, setDisable] = useState(true);
 
   // 消息输入控制
@@ -34,20 +39,23 @@ const Dialoge: React.FC = () => {
     } else if(!isDisable && msg.length ===0) {
       setDisable(true)
     }
-    setMessage({content: msg, msgType: MsgTypes.Send});
+    setMessage({
+      content: msg, 
+      type: MsgTypes.Send,
+      userName: DEFAULT_NAME
+    });
   }
 
   // 当用户加入，通知服务端
   const logInUser = useCallback(() => {
-    const username: string = 'yeyujingren';
+    const username: string = DEFAULT_NAME;
     if(username.trim()) {
-      const data = {
-        content: username
+      const data: MsgProps = {
+        content: '',
+        type: MsgTypes.ComeTips,
+        userName: username
       };
-      client.send(JSON.stringify({
-        ...data,
-        type: MsgTypes.Tips
-      }))
+      client.send(JSON.stringify(data))
     }
   }, [])
 
@@ -56,6 +64,9 @@ const Dialoge: React.FC = () => {
       logInUser();
       console.log('网络正常，您可以正常聊天了……')
     };
+    return () => {
+      client.close();
+    }
   }, []);
 
   useEffect(() => {
@@ -63,12 +74,12 @@ const Dialoge: React.FC = () => {
     client.onmessage = (content: IMessageEvent) => {
       const dataFromServer = JSON.parse(content.data as string);
       const receiveMsg: MsgProps = {
-        content: '',
-        msgType: MsgTypes.Receive
+        content: dataFromServer.content,
+        type: dataFromServer.type,
+        userName: dataFromServer.userName,
       }
-      console.log("dataFromServer", dataFromServer )
-      receiveMsg.content = dataFromServer.content;
-      receiveMsg.msgType = dataFromServer.type;
+
+      console.log("dataFromServer", dataFromServer );
       
       const oMsgList: MsgProps[] = [...msgList];
       oMsgList.push(receiveMsg);
@@ -83,19 +94,12 @@ const Dialoge: React.FC = () => {
   const sendMsgHandler = () => {
     const oMsgList: MsgProps[] = [...msgList];
     oMsgList.push(message);
-    setMessage(initMsg);
+    client.send(JSON.stringify(message));
+
+    // 各种状态还原
+    setMessage(initProps);
     setMsgList(oMsgList);
     setDisable(true);
-    // 发送给服务端进行转发
-    // client.send(JSON.stringify({
-    //   type: 'messageSend',
-    //   context: message.context
-    // }))
-    const sendMsg: MsgProps = {
-      content: message.content,
-      msgType: MsgTypes.Send
-    }
-    client.send(JSON.stringify(sendMsg));
   }
   
   const goBack = () => {
@@ -114,9 +118,9 @@ const Dialoge: React.FC = () => {
       <div className="messageListWapper">
         {
           msgList.map((item, index) => (
-            item.msgType === MsgTypes.Tips 
-              ? <MessageTips name={item.content} /> 
-              : <DialogeItem key={JSON.stringify(`${item.content}_${index}`)} msgType={item.msgType} msg={item.content} />
+            item.type === 2 
+              ? <MessageTips name={item.userName} /> 
+              : <DialogeItem key={JSON.stringify(`${item.content}_${index}`)} {...item} />
           ))
         }
       </div>
