@@ -1,22 +1,24 @@
-import React, { FC, useState, useEffect } from 'react';
-import { InputItem, Button } from 'antd-mobile';
+import React, { useState, useEffect, useCallback } from 'react';
+import { InputItem, Button, NavBar, Icon } from 'antd-mobile';
 import {w3cwebsocket as W3CWbsocket, IMessageEvent} from 'websocket';
+import history from '../../../utils/history';
 
 import {MsgProps, MsgTypes} from '../type';
 import DialogeItem from './DialogeItem';
+import MessageTips from '../../../Component/MessageTips';
 
 import './style.less';
 
 const client = new W3CWbsocket('ws://10.130.170.201:8000');
 
-const Dialoge: FC = () => {
+const Dialoge: React.FC = () => {
   // 初始化消息相关默认值
   const initMsgList: MsgProps[] = [{
-    context: 'hello my dear😄',
+    content: 'aha, its a sunnly day, isn\'t it?😄',
     msgType: MsgTypes.Receive
   }];
   const initMsg: MsgProps = {
-    context: '',
+    content: '',
     msgType: MsgTypes.Send
   }
 
@@ -32,45 +34,47 @@ const Dialoge: FC = () => {
     } else if(!isDisable && msg.length ===0) {
       setDisable(true)
     }
-    setMessage({context: msg, msgType: MsgTypes.Send});
+    setMessage({content: msg, msgType: MsgTypes.Send});
   }
+
+  // 当用户加入，通知服务端
+  const logInUser = useCallback(() => {
+    const username: string = 'yeyujingren';
+    if(username.trim()) {
+      const data = {
+        content: username
+      };
+      client.send(JSON.stringify({
+        ...data,
+        type: MsgTypes.Tips
+      }))
+    }
+  }, [])
 
   useEffect(() => {
     client.onopen = () => {
+      logInUser();
       console.log('网络正常，您可以正常聊天了……')
     };
+  }, []);
 
+  useEffect(() => {
     // 从服务端接受消息
-    client.onmessage = (context: IMessageEvent) => {
-      console.log(context);
-      const dataFromServer = JSON.parse(context.data as string);
+    client.onmessage = (content: IMessageEvent) => {
+      const dataFromServer = JSON.parse(content.data as string);
       const receiveMsg: MsgProps = {
-        context: '',
+        content: '',
         msgType: MsgTypes.Receive
       }
-      // if(dataFromServer.type === 'messageSend') {
-      //   receiveMsg.context = dataFromServer.data.editorContent;
-      // }
-      receiveMsg.context = dataFromServer;
+      console.log("dataFromServer", dataFromServer )
+      receiveMsg.content = dataFromServer.content;
+      receiveMsg.msgType = dataFromServer.type;
+      
       const oMsgList: MsgProps[] = [...msgList];
       oMsgList.push(receiveMsg);
       setMsgList(oMsgList);
     }
   }, [msgList])
-
-  // 当用户加入，通知服务端
-  const logInUser = () => {
-    const username: string = 'yeyujingren';
-    if(username.trim()) {
-      const data = {
-        username
-      };
-      client.send(JSON.stringify({
-        ...data,
-        type: 'userevent'
-      }))
-    }
-  }
 
   /**
    * 发送数据后通知服务端进行转发
@@ -87,21 +91,38 @@ const Dialoge: FC = () => {
     //   type: 'messageSend',
     //   context: message.context
     // }))
-    client.send(JSON.stringify(message.context));
+    const sendMsg: MsgProps = {
+      content: message.content,
+      msgType: MsgTypes.Send
+    }
+    client.send(JSON.stringify(sendMsg));
+  }
+  
+  const goBack = () => {
+    history.goBack();
   }
 
   return (
     <div className="messageWapper">
+      <NavBar 
+        mode='light'
+        icon={<Icon type='left' />}
+        onLeftClick={goBack}
+      >
+        聊天室001
+      </NavBar>
       <div className="messageListWapper">
         {
-          msgList.map(item => {
-            return <DialogeItem key={JSON.stringify(item)} msgType={item.msgType} msg={item.context} />
-          })
+          msgList.map((item, index) => (
+            item.msgType === MsgTypes.Tips 
+              ? <MessageTips name={item.content} /> 
+              : <DialogeItem key={JSON.stringify(`${item.content}_${index}`)} msgType={item.msgType} msg={item.content} />
+          ))
         }
       </div>
       <div className="sendMsgWapper">
         <InputItem
-          value={message.context}
+          value={message.content}
           onChange={(msg) => writeMsgHandler(msg)}
         >
           <div className="iconfont">&#xe631;</div>

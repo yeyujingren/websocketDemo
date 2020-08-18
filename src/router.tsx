@@ -1,10 +1,10 @@
 import React, {FC, ReactElement, SFC, ComponentClass} from 'react';
 import {Router, Switch, Route, Redirect, RouteComponentProps} from 'react-router-dom';
 import {history} from './utils/history';
-import Login from './Component/Regester/Regester';
-import Logon from './Component/Regester/Logon';
-import Home from './Component/home';
-import DialogeList from './Component/message/Dialoge';
+import Login from './pages/Regester/Regester';
+import Logon from './pages/Regester/Logon';
+import Home from './pages/home';
+import DialogeList from './pages/message/Dialoge';
 
 interface RouterPropsInter {
   path: string;

@@ -1,10 +1,11 @@
 export enum MsgTypes {
   Send,
-  Receive
+  Receive,
+  Tips
 }
 
 export interface MsgProps {
-  context: string;
+  content: string;
   msgType: MsgTypes;
 }
 
