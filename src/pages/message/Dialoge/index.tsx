@@ -47,12 +47,12 @@ const Dialoge: React.FC = () => {
   }
 
   // 当用户加入，通知服务端
-  const logInUser = useCallback(() => {
+  const logInUser = useCallback((isLeave) => {
     const username: string = DEFAULT_NAME;
     if(username.trim()) {
       const data: MsgProps = {
         content: '',
-        type: MsgTypes.ComeTips,
+        type: isLeave ? MsgTypes.LeaveTips: MsgTypes.ComeTips,
         userName: username
       };
       client.send(JSON.stringify(data))
@@ -61,11 +61,12 @@ const Dialoge: React.FC = () => {
 
   useEffect(() => {
     client.onopen = () => {
-      logInUser();
+      logInUser(false);
       console.log('网络正常，您可以正常聊天了……')
     };
     return () => {
-      client.close();
+      logInUser(true);
+      setTimeout(client.close, 0)
     }
   }, []);
 
@@ -118,8 +119,8 @@ const Dialoge: React.FC = () => {
       <div className="messageListWapper">
         {
           msgList.map((item, index) => (
-            item.type === 2 
-              ? <MessageTips name={item.userName} /> 
+            item.type === MsgTypes.ComeTips ||  item.type === MsgTypes.LeaveTips
+              ? <MessageTips {...item} /> 
               : <DialogeItem key={JSON.stringify(`${item.content}_${index}`)} {...item} />
           ))
         }

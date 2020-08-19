@@ -1,15 +1,22 @@
 import React from 'react';
 import './messageTips.less';
+import { MsgTypes } from '../pages/message/type';
 
 interface TipsProps {
-  name: string
+  userName: string,
+  content: string,
+  type: MsgTypes
 }
 
 const MessgaeTips: React.FC<TipsProps> = (props:TipsProps):JSX.Element => {
-  const {name} = props;
+  const {userName, type} = props;
   return (
     <div className="msgTips">
-      {name}加入聊天^ - ^
+      {
+        type === MsgTypes.ComeTips
+          ? `欢迎${userName}加入聊天^ - ^`
+          : `${userName}离开了聊天`
+      }
     </div>
   )
 }
