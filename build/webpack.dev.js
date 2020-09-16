@@ -9,6 +9,7 @@ module.exports = WebpackMerge(WebpackConfig, {
   devServer: {
     port: 9520,
     host: '0.0.0.0',
+    publicPath: '/',
     contentBase: path.resolve(__dirname, '../app/public'),
     compress: true,
     historyApiFallback: {
@@ -18,7 +19,13 @@ module.exports = WebpackMerge(WebpackConfig, {
     },
 
     proxy: {
-      '/api': 'http://127.0.0.1:8080',
+      '/api': {
+        target: 'http://localhost:9521',
+        logLevel: 'debug',
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
     },
     // fix: ngrok tips: Invalid Host header
     disableHostCheck: true

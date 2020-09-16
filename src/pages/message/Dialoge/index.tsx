@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { InputItem, Button, NavBar, Icon } from 'antd-mobile';
+import { InputItem, Button, NavBar, Icon, Toast } from 'antd-mobile';
 import {w3cwebsocket as W3CWbsocket, IMessageEvent} from 'websocket';
 import history from '../../../utils/history';
 
@@ -29,6 +29,7 @@ const Dialoge: React.FC = () => {
 
   // init state
   const [message, setMessage] = useState<MsgProps>(initProps);
+  const [isConnect, setIsConnect] = useState<Boolean>(false);
   const [msgList, setMsgList] = useState<Array<MsgProps>>(initMsgList);
   const [isDisable, setDisable] = useState(true);
 
@@ -62,6 +63,7 @@ const Dialoge: React.FC = () => {
   useEffect(() => {
     client.onopen = () => {
       logInUser(false);
+      setIsConnect(true);
       console.log('网络正常，您可以正常聊天了……')
     };
     return () => {
@@ -93,14 +95,18 @@ const Dialoge: React.FC = () => {
    * 并清空输入框
    */
   const sendMsgHandler = () => {
-    const oMsgList: MsgProps[] = [...msgList];
-    oMsgList.push(message);
-    client.send(JSON.stringify(message));
+    if(isConnect) {
+      const oMsgList: MsgProps[] = [...msgList];
+      oMsgList.push(message);
+      client.send(JSON.stringify(message));
 
-    // 各种状态还原
-    setMessage(initProps);
-    setMsgList(oMsgList);
-    setDisable(true);
+      // 各种状态还原
+      setMessage(initProps);
+      setMsgList(oMsgList);
+      setDisable(true);
+    } else {
+      Toast.fail('请检查您的网络')
+    }
   }
   
   const goBack = () => {

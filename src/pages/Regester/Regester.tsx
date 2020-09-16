@@ -1,5 +1,7 @@
 import React, { FC, FormEvent, useEffect, useState } from 'react';
 import { InputItem, List, Button, Toast } from 'antd-mobile';
+
+import {login} from '../../service/user'
 import history from '../../utils/history';
 import useForm from 'rc-form-hooks';
 
@@ -19,7 +21,7 @@ const Regester: FC = () => {
   }, [])
 
   const { getFieldDecorator, validateFields } = useForm<{
-    usename: string;
+    username: string;
     userpwd: string;
   }>();
 
@@ -28,14 +30,18 @@ const Regester: FC = () => {
     e.preventDefault();
     validateFields()
       .then(value => {
-        // if username === 'admin' && pwd === '9520'
-        const {usename, userpwd} = value;
-        if(usename === 'admin' && userpwd === '9520') {
-          localStorage.setItem('islogin', 'true');
-          history.push('/');
-        } else {
-          Toast.fail('哎呀，用户名或者密码有问题呦～')
-        }
+        login(value)
+          .then(res => {
+            if(res.data.code === 1) {
+              localStorage.setItem('islogin', 'true');
+              history.push('/');
+            } else {
+              Toast.fail(res.data.msg)
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          })
       })
       .catch(err => {
         Toast.fail(err.message);
@@ -66,7 +72,7 @@ const Regester: FC = () => {
         <div className="login">
           <List>
             {
-              getFieldDecorator('usename', {
+              getFieldDecorator('username', {
                 rules: [{
                   required: true,
                   message: '用户名不能为空～'
