@@ -14,4 +14,13 @@ declare namespace Params {
     email: string;
   }
 
+  /**
+   * 注册
+   */
+  interface Register {
+    email: string;
+    verifyCode: string;
+    username: string;
+    userpwd: string;
+  }
 }

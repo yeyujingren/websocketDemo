@@ -8,5 +8,10 @@ declare namespace Res {
   /**
    *  获取验证码
    */
-  interface EmailCode<T=null> extends API.BaseResponse {};
+  interface EmailCode<T=null> extends API.BaseResponse<T> {};
+
+  /**
+   * 注册
+   */
+  interface Register<T=null> extends API.BaseResponse<T> {};
 }
