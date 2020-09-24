@@ -26,6 +26,15 @@ module.exports = WebpackMerge(WebpackConfig, {
           '^/api': ''
         }
       },
+      // proxy websocket
+      '/socket': {
+        target: 'ws://10.130.170.201:9521',
+        logLevel: 'debug',
+        ws: true,
+        pathRewrite: {
+          '^/socket': ''
+        }
+      }
     },
     // fix: ngrok tips: Invalid Host header
     disableHostCheck: true

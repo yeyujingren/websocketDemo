@@ -28,7 +28,7 @@
     "react/jsx-props-no-spreading": "off",
     "no-plusplus": "off",
     "no-underscore-dangle": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     // 扩展文件后缀eslint
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "indent": [

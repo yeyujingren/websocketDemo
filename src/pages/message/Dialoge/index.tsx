@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { InputItem, Button, NavBar, Icon, Toast } from 'antd-mobile';
-import {w3cwebsocket as W3CWbsocket, IMessageEvent} from 'websocket';
+// import {w3cwebsocket as W3CWbsocket, IMessageEvent} from 'websocket';
+import io from 'socket.io-client';
 import history from '../../../utils/history';
 
 import {MsgProps, MsgTypes} from '../type';
@@ -11,7 +12,11 @@ import './style.less';
 
 const DEFAULT_NAME = 'yeyujingren';
 
-const client = new W3CWbsocket('ws://10.130.170.201:8000');
+// const client = new W3CWbsocket('ws://localhost:9520/socket/chat');
+const socket = io('ws://10.130.170.201:9521/chat', {
+  query: {},
+  transports: ['websocket']
+});
 
 const Dialoge: React.FC = () => {
   // 初始化消息相关默认值
@@ -56,38 +61,59 @@ const Dialoge: React.FC = () => {
         type: isLeave ? MsgTypes.LeaveTips: MsgTypes.ComeTips,
         userName: username
       };
-      client.send(JSON.stringify(data))
+      // client.send(JSON.stringify(data))
     }
   }, [])
 
   useEffect(() => {
-    client.onopen = () => {
+    // socket.connect = () => {
+    //   logInUser(false);
+    //   setIsConnect(true);
+    //   console.log('网络正常，您可以正常聊天了……')
+    // };
+    // socket.on('new', (data: any) => {
+    //   console.log('data---->', data);
+    // })
+    socket.on('connect', () => {
+      const {id} = socket;
       logInUser(false);
       setIsConnect(true);
-      console.log('网络正常，您可以正常聊天了……')
-    };
+      console.log('网络正常，您可以正常聊天了……');
+  
+      // 监听自身 id 以实现 p2p 通讯
+      socket.on(id, (msg: any) => {
+        console.log('#receive,', msg);
+      });
+    });
     return () => {
       logInUser(true);
-      setTimeout(client.close, 0)
+      // setTimeout(client.close, 0)
+      socket.on('disconnect', (msg: any) => {
+        console.log('#disconnect', msg);
+      });
     }
   }, []);
 
   useEffect(() => {
     // 从服务端接受消息
-    client.onmessage = (content: IMessageEvent) => {
-      const dataFromServer = JSON.parse(content.data as string);
-      const receiveMsg: MsgProps = {
-        content: dataFromServer.content,
-        type: dataFromServer.type,
-        userName: dataFromServer.userName,
-      }
+    socket.on('news', (msg: any) => {
+      console.log('msg----->', msg)
+    })
+    // client.onmessage = (content: IMessageEvent) => {
+    //   console.log(content);
+    // const dataFromServer = JSON.parse(content.data as string);
+    // const receiveMsg: MsgProps = {
+    //   content: dataFromServer.content,
+    //   type: dataFromServer.type,
+    //   userName: dataFromServer.userName,
+    // }
 
-      console.log("dataFromServer", dataFromServer );
-      
-      const oMsgList: MsgProps[] = [...msgList];
-      oMsgList.push(receiveMsg);
-      setMsgList(oMsgList);
-    }
+    // console.log("dataFromServer", dataFromServer );
+    
+    // const oMsgList: MsgProps[] = [...msgList];
+    // oMsgList.push(receiveMsg);
+    // setMsgList(oMsgList);
+    // }
   }, [msgList])
 
   /**
@@ -98,7 +124,8 @@ const Dialoge: React.FC = () => {
     if(isConnect) {
       const oMsgList: MsgProps[] = [...msgList];
       oMsgList.push(message);
-      client.send(JSON.stringify(message));
+      // client.send(JSON.stringify(message));
+      socket.emit('send', { text: '11111111'});
 
       // 各种状态还原
       setMessage(initProps);
