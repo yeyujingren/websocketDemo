@@ -13,8 +13,10 @@ import './style.less';
 const DEFAULT_NAME = 'yeyujingren';
 
 // const client = new W3CWbsocket('ws://localhost:9520/socket/chat');
-const socket = io('ws://10.130.170.201:9521/chat', {
+const socket = io('http://10.130.170.201:9521/chat', {
   query: {},
+  autoConnect: false,
+  reconnectionAttempts: 3,
   transports: ['websocket']
 });
 
@@ -66,33 +68,20 @@ const Dialoge: React.FC = () => {
   }, [])
 
   useEffect(() => {
-    // socket.connect = () => {
-    //   logInUser(false);
-    //   setIsConnect(true);
-    //   console.log('网络正常，您可以正常聊天了……')
-    // };
-    // socket.on('new', (data: any) => {
-    //   console.log('data---->', data);
-    // })
+    socket.open();
     socket.on('connect', () => {
       const {id} = socket;
       logInUser(false);
       setIsConnect(true);
-      console.log('网络正常，您可以正常聊天了……');
-  
-      // 监听自身 id 以实现 p2p 通讯
-      socket.on(id, (msg: any) => {
-        console.log('#receive,', msg);
-      });
+      console.log('网络正常，您可以正常聊天了……', id);
     });
+
     return () => {
       logInUser(true);
-      // setTimeout(client.close, 0)
-      socket.on('disconnect', (msg: any) => {
-        console.log('#disconnect', msg);
-      });
+      socket.disconnect();
+      console.log('websocket has disconnection success!')
     }
-  }, []);
+  }, [logInUser]);
 
   useEffect(() => {
     // 从服务端接受消息
