@@ -82,12 +82,13 @@ const Dialoge: React.FC = () => {
     }
   }, [logInUser]);
 
-  const getMsg = useCallback((msg: {data: Array<MsgProps>}) => {
+  const getMsg = useCallback((msg: {data: MsgProps}) => {
     const {data} = msg;
+    console.log('----->', msg);
     const receiveMsg: MsgProps = {
-      content: data[0].content,
-      type: data[0].type,
-      userName: data[0].userName,
+      content: data.content,
+      type: data.type,
+      userName: data.userName,
     }
     const oMsgList: MsgProps[] = [...msgList];
     oMsgList.push(receiveMsg);
@@ -111,8 +112,7 @@ const Dialoge: React.FC = () => {
     if(isConnect) {
       const oMsgList: MsgProps[] = [...msgList];
       oMsgList.push(message);
-      // client.send(JSON.stringify(message));
-      socket.emit('send', { text: '11111111'});
+      socket.emit('send', message);
 
       // 各种状态还原
       setMessage(initProps);
