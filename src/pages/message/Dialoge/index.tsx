@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { InputItem, Button, NavBar, Icon, Toast } from 'antd-mobile';
-// import {w3cwebsocket as W3CWbsocket, IMessageEvent} from 'websocket';
 import io from 'socket.io-client';
 import history from '../../../utils/history';
 
@@ -83,27 +82,26 @@ const Dialoge: React.FC = () => {
     }
   }, [logInUser]);
 
-  useEffect(() => {
-    // 从服务端接受消息
-    socket.on('news', (msg: any) => {
-      console.log('msg----->', msg)
-    })
-    // client.onmessage = (content: IMessageEvent) => {
-    //   console.log(content);
-    // const dataFromServer = JSON.parse(content.data as string);
-    // const receiveMsg: MsgProps = {
-    //   content: dataFromServer.content,
-    //   type: dataFromServer.type,
-    //   userName: dataFromServer.userName,
-    // }
-
-    // console.log("dataFromServer", dataFromServer );
-    
-    // const oMsgList: MsgProps[] = [...msgList];
-    // oMsgList.push(receiveMsg);
-    // setMsgList(oMsgList);
-    // }
+  const getMsg = useCallback((msg: {data: Array<MsgProps>}) => {
+    const {data} = msg;
+    const receiveMsg: MsgProps = {
+      content: data[0].content,
+      type: data[0].type,
+      userName: data[0].userName,
+    }
+    const oMsgList: MsgProps[] = [...msgList];
+    oMsgList.push(receiveMsg);
+    setMsgList(oMsgList);
   }, [msgList])
+
+  useEffect(() => {
+    // tips: socket定义的监听事件因该及时销毁，否则会占用资源，导致程序崩溃
+    // 从服务端接受消息
+    socket.on('news', getMsg)
+    return () => {
+      socket.removeEventListener('news', getMsg)
+    }
+  }, [getMsg, msgList])
 
   /**
    * 发送数据后通知服务端进行转发
